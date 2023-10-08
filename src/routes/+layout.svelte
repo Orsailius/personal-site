@@ -8,13 +8,13 @@
 <div class="app">
 	<Header />
 
-	<main>
+	<main class="relative">
 		<slot />
 	</main>
 
-	<footer>
+	<!--<footer>
 		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-	</footer>
+	</footer>-->
 </div>
 
 <style>
@@ -24,7 +24,7 @@
 		min-height: 100vh;
 	}
 
-	main {
+	/*main {
 		flex: 1;
 		display: flex;
 		flex-direction: column;
@@ -33,7 +33,7 @@
 		max-width: 64rem;
 		margin: 0 auto;
 		box-sizing: border-box;
-	}
+	}*/
 
 	footer {
 		display: flex;

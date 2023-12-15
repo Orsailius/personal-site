@@ -10,17 +10,7 @@
 		<meta name="viewport" content="width=device-width" />
 		
 		<link href="./_app/immutable/assets/0.b1c18f03.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/2.66664992.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/ProjectCard.ff25c84c.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.d1b42a8f.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.92c06e9c.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.b15e68cb.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/paths.2d3e2d93.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.0e35c6c6.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.a4192956.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/0.103e7db4.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/2.6720f8f8.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/ProjectCard.svelte_svelte_type_style_lang.8aa28204.js"><title>Home</title><!-- HEAD_svelte-15bphv1_START --><meta name="description" content="Justin Moore"><!-- HEAD_svelte-15bphv1_END -->
+		<link href="./_app/immutable/assets/6.719fc3b2.css" rel="stylesheet"><title>Old Timey Video</title><!-- HEAD_svelte-1ewx5fb_START --><meta name="description" content="About this app"><!-- HEAD_svelte-1ewx5fb_END -->
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
@@ -54,41 +44,24 @@
 
 	<main class="relative">
 
+<div class="bg-base-100"><h1 class="text-4xl pt-8 font-semibold ">Watch video like back in the day!</h1>
+	<div class="grid m-4 ml-8 mr-8 grid-rows-3 grid-cols-1 md:grid-cols-3 md:grid-rows-1"><label class="form-control p-2 col-span-1"><div class="label"><span class="label-text">Era</span></div>
+			<select class="select select-bordered select-primary select-larg"><option value="0">Black and White</option><option value="1">Sepia</option><option value="2">CRT</option><option value="3">Low Rez</option></select></label>
+		<label class="form-control p-2 col-span-2"><div class="label"><span class="label-text">Youtube Video URL</span></div>
+			<input type="text" placeholder="Video link" class="input input-bordered" value="https://www.youtube.com/embed/gnEIeVWLtbU"></label></div>	
+	<div class="m-8 mr-16 video-container  svelte-2nr8zf"><iframe class="responsive-iframe greyscale svelte-2nr8zf" src="https://www.youtube.com/embed/gnEIeVWLtbU" title="Ice Ice MATRIX" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
 
-<div class="bg-base-100"><section class="hero min-h-screen svelte-1pfg4rz"><div class="hero-content text-center"><div class="max-w-md"><h1 class="text-5xl font-bold svelte-1pfg4rz">Coming Soon</h1>
-				<p class="py-6">Stay tuned for the website, you can check out some other content in the tabs at the top of the screen</p>
-				<p class="py-6">Thanks, Justin</p></div></div></section>
-		</div></main>
+
+
+<svg><filter id="crt"><feTurbulence id="turbulence" type="turbulence" baseFrequency="0.00001 0.00002" numOctaves="1" result="NOISE"></feTurbulence><feDisplacementMap id="displace" in="SourceGraphic" in2="NOISE" scale="2"></feDisplacementMap><animate xlink:href="#turbulence" attributeName="baseFrequency" dur="60s" keyTimes="0;0.5;1" values="0.01 0.02;0.02 0.04;0.01 0.02" repeatCount="indefinite"></animate><feMorphology in="displace" operator="erode" radius="0.25"></feMorphology></filter></svg>
+
+<svg><filter id="convolve"><feConvolveMatrix id="emboss" kernelMatrix="-2 -1 0 
+		-1 1 1 
+		0 1 2"></feConvolveMatrix><feMorphology in="emboss" operator="dilate" radius="1"></feMorphology></filter></svg></main>
 
 	
 </div>
 
-
-			
-			<script>
-				{
-					__sveltekit_dxettd = {
-						base: new URL(".", location).pathname.slice(0, -1),
-						env: {}
-					};
-
-					const element = document.currentScript.parentElement;
-
-					const data = [null,null];
-
-					Promise.all([
-						import("./_app/immutable/entry/start.d1b42a8f.js"),
-						import("./_app/immutable/entry/app.0e35c6c6.js")
-					]).then(([kit, app]) => {
-						kit.start(app, element, {
-							node_ids: [0, 2],
-							data,
-							form: null,
-							error: null
-						});
-					});
-				}
-			</script>
-		</div>
+</div>
 	</body>
 </html>

@@ -2,6 +2,8 @@
     import ComponentPreviewBox from '$lib/components/ComponentPreview.svelte';
 	import SkillList from '$lib/components/SkillList.svelte';
 	import { programmingLanguages, tools } from '$lib/SkillData';
+	import { projects } from '$lib/datatypes/ProjectInfo';
+    import ProjectCard from '$lib/components/ProjectCard.svelte';
 </script>
 
 <svelte:head>
@@ -11,14 +13,28 @@
 
 <!-- svelte-ignore empty-block -->
 {#if true}
-<section class="hero min-h-screen bg-base-200">
-	<div class="hero-content text-center">
-	  <div class="max-w-md">
-		<h1 class="text-5xl font-bold">Coming Soon</h1>
-		<p class="py-6">Stay tuned for the website, you can check out some other content in the tabs at the top of the screen</p>
-	  </div>
-	</div>  
-</section>
+	<div class="bg-base-100">
+		<section class="hero min-h-screen">
+			<div class="hero-content text-center">
+			<div class="max-w-md">
+				<h1 class="text-5xl font-bold">Coming Soon</h1>
+				<p class="py-6">Stay tuned for the website, you can check out some other content in the tabs at the top of the screen</p>
+				<p class="py-6">Thanks, Justin</p>
+			</div>
+			</div>  
+		</section>
+		<!--<section>
+			<h1 class="text-4xl pb-8 font-bold"> Projects </h1>
+			<div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
+				{#each projects as projectInfo}
+					<ProjectCard name={projectInfo.name} 
+						url="src/lib/images/test/FicterraCard.png" 
+						description={projectInfo.shortDescription} />
+				{/each}
+			</div>		
+		</section>-->
+	</div>
+	
 {:else}
 	<section class="bg-slate-100 m:p-[16vw] p-[12vw]">	
 		<div class="grid grid-cols-2">

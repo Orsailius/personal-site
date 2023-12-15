@@ -3,7 +3,7 @@
     export let color:string; 
 </script>
 
-<div class="rounded-md outer-box shadow-md flex border border-slate-200 items-center bg-slate-100">
+<div class="rounded-md outer-box shadow-md flex border border-base-200 items-center bg-base-100">
     <button class="rounded-md w-4 h-4 shadow-md flex items-center gap-4" style={"background-color:"+color } on:click={()=>onSelect(color)}>
     
     </button>

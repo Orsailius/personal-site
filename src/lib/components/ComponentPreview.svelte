@@ -21,16 +21,16 @@
 		<table class="table-xs md:table-sm table-pin-rows table w-full">
 			<thead>
 				<tr class="border-b-0">
-					<th class="bg-primary-content rounded-l-lg lg:py-3">
+					<th class="bg-secondary rounded-l-lg lg:py-3 text-secondary-content">
 						Parameter
 					</th>
-					<th class="bg-primary-content lg:py-3">
+					<th class="bg-secondary lg:py-3 text-secondary-content">
 						Type
 					</th>
-					<th class="bg-primary-content lg:py-3">
+					<th class="bg-secondary lg:py-3 text-secondary-content">
 						Test Value
 					</th>
-					<th class="bg-primary-content rounded-r-lg lg:py-3">
+					<th class="bg-secondary rounded-r-lg lg:py-3 text-secondary-content">
 						Description
 					</th>
 				</tr>
@@ -95,6 +95,16 @@
 												<span>|</span>
 											</div>
 										{/if}
+									{:else if inputInfo.varType == "Number"}
+										{#if inputInfo.path == ""}
+											<input type="number" 
+													bind:value={componentInfo.testInput[inputInfo.name]} 
+													class="input input-sm input-bordered input-primary w-full max-w-xs"/>											
+										{:else}	
+											<input type="number"
+												bind:value={componentInfo.testInput[inputInfo.path][inputInfo.name]} 
+												class="input input-sm input-bordered input-primary w-full max-w-xs" />											
+										{/if}
 									{/if}
 								</span>
 							</th>
@@ -109,7 +119,7 @@
 			</tbody>
 		</table>					
 		<div class="mb-4"></div>
-		<div style={"background-image: repeating-linear-gradient(45deg," + previewColor + "," + previewColor + " 13px, hsl(var(--b2)) 13px, hsl(var(--b2)) 14px);"}  
+		<div style={"background-image: repeating-linear-gradient(45deg," + previewColor + "," + previewColor + " 13px, oklch(var(--b2)) 13px, oklch(var(--b2)) 14px);"}  
 		class="flex bg-base-300 border border-base-500 
 			rounded-b-box rounded-tr-box relative overflow-x-auto items-center justify-center min-h-48 p-16">	
 			<div class="absolute flex flex-col top-2 left-2 gap-1">

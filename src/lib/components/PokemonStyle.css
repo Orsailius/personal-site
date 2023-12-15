@@ -1,0 +1,194 @@
+.pokemon-type 
+{
+    display: inline-block;
+    width: 66px;
+    background: #dbdbdb;
+    border: 1px solid #a3a3a3;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,.2);
+    color: #fff;
+    font-size: .75rem;
+    font-weight: normal;
+    font-family: sans-serif;
+    line-height: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(0 0 0 / 70%);
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: opacity .4s;
+}
+
+.pokemon-type-select
+{
+    border: 1px solid #a3a3a3;
+    border: 1px solid rgba(0,0,0,.2);
+    color: #fff;
+    font-size: .75rem;
+    font-weight: normal;
+    font-family: sans-serif;
+    line-height: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(0 0 0 / 70%);
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: opacity .4s;
+}
+
+.pokemon-type-for-move
+{
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.type-grid
+{
+    display: flex;
+    flex-wrap: wrap;
+    /*grid-template-columns: repeat(3, 1fr);*/
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+.table-controls {
+    margin-bottom: 10px;
+    padding: 10px 5px 0 5px;
+    background: #CFCFCF;
+    border: 1px solid #5d5c5c;
+    font-size: 14px;
+    box-sizing: border-box;
+    display: block;
+    line-height: 1.42857143;
+}
+
+.table-controls input, .table-controls select {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 4px 10px;
+    border: 1px solid #4b4b4b;
+    border-radius: 5px;
+    background: #ffffff;
+    outline: none;
+}
+
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+
+/*button {
+    padding: 5px 10px;
+    border: 1px solid #25682a;
+    background: #3FB449;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3FB449), to(#25682a));
+    background: linear-gradient(to bottom, #3FB449 0%, #25682a 100%);
+    color: #fff;
+    font-weight: bold;
+    -webkit-transition: color .3s, background .3s, opacity, .3s;
+    transition: color .3s, background .3s, opacity, .3s;
+}*/
+
+.table-controls input, .table-controls select, .table-controls button, .table-controls > span {
+    margin: 0 5px 10px 5px;
+}
+
+select:not(:-internal-list-box) {
+    overflow: visible !important;
+}
+
+.pokemon-type + .pokemon-type 
+{
+    margin-left: 5px;
+}
+.pokemon-type-normal
+{
+    background-color: #A8A77A;
+}
+
+.pokemon-type-fire
+{
+    background-color: #ee8130;
+}
+
+.pokemon-type-water
+{
+    background-color: #6390f0;
+}
+.pokemon-type-electric
+{
+    background-color: #f7d02c;
+}
+.pokemon-type-grass
+{
+    background-color: #7ac74c;
+}
+.pokemon-type-ice
+{
+    background-color: #96d9d6;
+}
+.pokemon-type-fighting
+{
+    background-color: #c22e28;
+}
+.pokemon-type-poison
+{
+    background-color: #a33ea1;
+}
+.pokemon-type-ground
+{
+    background-color: #efbf65;
+}
+.pokemon-type-flying
+{
+    background-color: #a98ff3;
+}
+.pokemon-type-psychic
+{
+    background-color: #f95587;
+}
+.pokemon-type-bug
+{
+    background-color: #a6b91a;
+}
+.pokemon-type-rock
+{
+    background-color: #b6a136;
+}
+.pokemon-type-ghost
+{
+    background-color: #735797;
+}
+.pokemon-type-dragon
+{
+    background-color: #6F35Fc;
+}
+.pokemon-type-dark
+{
+    background-color: #705746;
+}
+.pokemon-type-steel
+{
+    background-color: #b7b7ce;
+}
+.pokemon-type-fairy
+{
+    background-color: #d685ad;
+}

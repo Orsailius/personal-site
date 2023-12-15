@@ -4,9 +4,9 @@
 </script>
 
 <div class="join">
-    <input class="join-item input input-sm input-bordered input-primary w-full max-w-xs" 
+    <input class="join-item input input-bordered input-primary w-full max-w-xs" 
         bind:value={color} on:change={()=>onSelect(color)}/>
-    <input type="color" class="join-item input input-sm p-0 pr-1 pl-1 input-bordered input-primary bg-slate-200"
+    <input type="color" class="join-item input p-0 pr-1 pl-1 input-bordered input-primary bg-base-200"
         bind:value={color} on:change={()=>onSelect(color)}/>
 </div>
 

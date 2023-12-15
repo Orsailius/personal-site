@@ -4,6 +4,11 @@
     import ComponentPreview from "$lib/components/ComponentPreview.svelte";
     import ContactForm, { info as ContactFormInfo } from "$lib/components/ContactForm.svelte";
     import DataTable4D, { info as DataTable4DInfo } from "$lib/components/DataTable4D.svelte";
+	import VideoPlayer, { info as VideoPlayerInfo } from "$lib/components/VideoPlayer.svelte";
+	import ProgressiveImageLoader, { info as ProgressiveImageLoaderInfo } from "$lib/components/ProgressiveImageLoader.svelte";
+	import CardImage, { info as CardImageInfo } from "$lib/components/CardImage.svelte";
+	import CardGrid, { info as CardGridInfo } from "$lib/components/CardGrid.svelte";
+	import ProjectCard, { info as ProjectCardInfo } from "$lib/components/ProjectCard.svelte";
 	//use enum like casing for info?
     import SkillSlide, { info as SkillSlideInfo } from "$lib/components/SkillSlide.svelte";
     import StarRating, { info as StarRatingInfo } from "$lib/components/StarRating.svelte";
@@ -17,16 +22,26 @@
 		ColorChoiceButton, 
 		ColorInput, 
 		ContactForm,
-		DataTable4D];
+		DataTable4D,
+		VideoPlayer,
+		ProgressiveImageLoader,
+		CardImage,
+		CardGrid,
+		ProjectCard];
 	let infos = [
 		SkillSlideInfo, 
 		StarRatingInfo, 
 		ColorChoiceButtonInfo,
 		ColorInputInfo,
 		ContactFormInfo,
-		DataTable4DInfo];
+		DataTable4DInfo,
+		VideoPlayerInfo,
+		ProgressiveImageLoaderInfo,
+		CardImageInfo,
+		CardGridInfo,
+		ProjectCardInfo];
 
-	let currentComponent = 0;
+	let currentComponent = 10;
 
 </script>
 <svelte:head>
@@ -57,7 +72,7 @@
 							</svg>
 						</span>
 						<span class="undefined">
-							{component.name.substring(6,component.name.lastIndexOf(">"))}
+							{infos[index].name}
 						</span> 
 					</button>
 				</li>

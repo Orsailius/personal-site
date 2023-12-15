@@ -9,7 +9,7 @@
 </script>
 
 <div class="bg-base-100 w-full p-8 rounded-lg">
-    <h1 class="text-3xl font-bold text-left text-primary"> Contact Me!</h1>
+    <h1 class="text-3xl font-bold text-left text-base-content"> Contact Me!</h1>
     <form method="POST"
         action= {"mailto:"+emailAddress}
         enctype="multipart/form-data">

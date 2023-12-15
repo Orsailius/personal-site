@@ -24,9 +24,6 @@
 		ContactForm,
 		DataTable4D,
 		VideoPlayer,
-		ProgressiveImageLoader,
-		CardImage,
-		CardGrid,
 		ProjectCard];
 	let infos = [
 		SkillSlideInfo, 
@@ -36,9 +33,6 @@
 		ContactFormInfo,
 		DataTable4DInfo,
 		VideoPlayerInfo,
-		ProgressiveImageLoaderInfo,
-		CardImageInfo,
-		CardGridInfo,
 		ProjectCardInfo];
 
 	let currentComponent = 10;

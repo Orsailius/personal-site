@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="coolLight">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		
+		<link href="./_app/immutable/assets/0.2d6cce03.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/4.3579abf7.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.00d26378.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.9a83d8d7.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.087b1095.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/paths.50c87a88.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.a973aa88.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.a4192956.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.53b66638.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/4.27e2bc47.js"><title>Count on This</title><!-- HEAD_svelte-unl93j_START --><meta name="description" content="See How long you have to wait"><!-- HEAD_svelte-unl93j_END -->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+
+
+
+<div class="app svelte-15wssfg"><header class="sticky top-0 z-50 svelte-11j7kyy"><div class="navbar bg-base-200"><div class="navbar-start"><div class="dropdown"><div tabindex="-1" class="btn btn-ghost lg:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path></svg></div>
+			<ul tabindex="-1" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+				<li><details><summary>15 Days of Website</summary>
+						<ul class="bg-base-200 rounded-t-none"><li><a href="/xmasadventure">Christmas Adventure</a></li>
+						 	<li><a href="/otv">Old Timey Video
+								</a></li><li><a href="/fonttitle">Font Title Tool
+								</a></li><li><a href="/pkmn">Pokemon Hard Counter
+								</a></li><li><a href="">Markdown Editor (Coming Wed Dec 20 2023)
+								</a></li><li><a href="">Christmas Movie Tierlist (Coming Thu Dec 21 2023)
+								</a></li><li><a href="">How Long Until? (Coming Fri Dec 22 2023)
+								</a></li></ul></details></li></ul></div>
+		  </div>
+		<div class="navbar-center hidden lg:flex"><ul class="menu menu-horizontal px-1">
+			
+			<li><details><summary>15 Days of Website</summary>
+					<ul class="bg-base-200 rounded-t-none"><li><a href="/xmasadventure">Christmas Adventure</a></li>
+						<li><a href="/otv">Old Timey Video
+						</a></li><li><a href="/fonttitle">Font Title Tool
+						</a></li><li><a href="/pkmn">Pokemon Hard Counter
+						</a></li><li><a href="">Markdown Editor (Coming Wed Dec 20 2023)
+						</a></li><li><a href="">Christmas Movie Tierlist (Coming Thu Dec 21 2023)
+						</a></li><li><a href="">How Long Until? (Coming Fri Dec 22 2023)
+						</a></li></ul></details></li></ul></div>
+		<div class="navbar-end"><label class="swap swap-rotate"><input type="checkbox" data-toggle-theme="coolDark,coolLight" data-act-class="ACTIVECLASS">
+				<svg class="swap-off fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"></path></svg>
+				<svg class="swap-on fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"></path></svg></label>
+		  </div></div>
+</header>
+
+	<main class="relative">
+
+<div class="bg-base-100 h-full" style="min-height:92.25vh"><h1 class="text-4xl pt-8 font-semibold">How Long Until..?</h1>
+    <div class="w-full flex pr-8 pt-2 justify-center"><button class="btn btn-accent">+ Add Date
+        </button></div>  
+	<div class="m-4 ml-8 mr-8 flex flex-wrap items-center gap-2"><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-blue-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">Christmas</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-yellow-400 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-blue-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">New Years Day</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-blue-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">Family Day</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-blue-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">Valentine's Day</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-blue-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">Easter Monday</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-blue-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">Mother's Day</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-blue-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">Father's Day</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-blue-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">Canada Day</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-blue-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">Civic Holiday</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-blue-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">Labour Day</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-blue-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">Thanksgiving</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-blue-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">Halloween</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-blue-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">Remembrance Day</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-blue-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">Christmas Day 24</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-orange-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">Last Epoch</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-orange-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">Alone in the Dark</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-green-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">Echo (MCU)</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-green-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">Deadpool 3</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-green-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">Captain America: Brave New World</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-green-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">Thunderbolts (MCU)</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-green-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">Blade</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-green-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">Fantastic Four</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-green-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">Avengers: The Kang Dynasty</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-green-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">Avengers: Secret Wars</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-green-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">Fallout</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-orange-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">POE 2 (Closed Beta)</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-orange-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">Diablo 4 S3</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-orange-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">Speedstorm S6*</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-orange-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">DRG: Rogue Core</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-orange-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">Hades 2*</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-purple-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">G7 Summit</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-purple-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">US Super Tuesday</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-purple-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">US Election</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-purple-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">Taiwan Election</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-purple-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">Indonesia Election</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-purple-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">Russia 'Election'</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-purple-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">Mexico Election</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-purple-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">Canada Election*</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div><div class="p-4 rounded-lg relative flex flex-col items-center text-primary-content bg-orange-500 svelte-1r6lp5b"><div class="text-xl md:text-4xl text-center pb-2 pr-4 pl-4 font-semibold">Tomb Raider Remastered</div>    
+                <button class="absolute mask mask-star-2 w-6 h-6 right-2 top-2 bg-gray-300 svelte-1r6lp5b"></button>   
+                <div class="grid grid-flow-col gap-4 text-center items-center auto-cols-max"><div class="flex flex-col"><span class="font-mono text-xl md:text-4xl"><span>undefined </span></span>
+                        days
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        hours
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        min
+                    </div> 
+                    <div class="flex flex-col"><span class="countdown font-mono text-xl md:text-4xl"><span style="--value:undefined;"></span></span>
+                        sec
+                    </div></div>
+            </div></div>
+    <dialog class="modal" id="addDateModal"><div class="modal-box"><h3 class="font-bold text-4xl text-center mb-2">Add a Date</h3>
+            <div class="flex flex-col"><label class="form-control w-full max-w-xs p-2"><div class="label"><span class="label-text">Event Name?</span></div>
+                    <input type="text" placeholder="Type here" class="input input-bordered w-full input-warning svelte-1r6lp5b" value=""></label>
+                <label class="form-control w-full max-w-xs p-2"><div class="label"><span class="label-text">Date</span></div>
+                    <input type="date" class="input input-bordered input-primary w-full input-warning svelte-1r6lp5b"></label>
+                <div class="label p-3"><span class="label-text">Category</span></div>
+                <div class="outline outline-1 outline-primary ml-3 rounded-xl grid grid-cols-2 gap-1 p-2"><div class="form-control outline-2 outline-secondary outline-dashed rounded-xl m-1"><label class="left-label cursor-pointer svelte-1r6lp5b"><input type="radio" name="radio-10" value="Game" class="radio checked:bg-orange-500 svelte-1r6lp5b" checked>                               
+                                <span class="label-text pl-4 text-xl">Game</span></label>
+                        </div><div class="form-control outline-2 outline-secondary outline-dashed rounded-xl m-1"><label class="left-label cursor-pointer svelte-1r6lp5b"><input type="radio" name="radio-10" value="Movie" class="radio checked:bg-green-500 svelte-1r6lp5b">                               
+                                <span class="label-text pl-4 text-xl">Movie</span></label>
+                        </div><div class="form-control outline-2 outline-secondary outline-dashed rounded-xl m-1"><label class="left-label cursor-pointer svelte-1r6lp5b"><input type="radio" name="radio-10" value="Politics" class="radio checked:bg-purple-500 svelte-1r6lp5b">                               
+                                <span class="label-text pl-4 text-xl">Politics</span></label>
+                        </div><div class="form-control outline-2 outline-secondary outline-dashed rounded-xl m-1"><label class="left-label cursor-pointer svelte-1r6lp5b"><input type="radio" name="radio-10" value="Holiday" class="radio checked:bg-blue-500 svelte-1r6lp5b">                               
+                                <span class="label-text pl-4 text-xl">Holiday</span></label>
+                        </div><div class="form-control outline-2 outline-secondary outline-dashed rounded-xl m-1"><label class="left-label cursor-pointer svelte-1r6lp5b"><input type="radio" name="radio-10" value="Other" class="radio checked:bg-red-500 svelte-1r6lp5b">                               
+                                <span class="label-text pl-4 text-xl">Other</span></label>
+                        </div></div>
+                <button class="btn btn-primary mt-2 ml-2 btn-disabled svelte-1r6lp5b">Add
+                </button></div>
+            <div class="modal-action"><form method="dialog">
+                    <button class="btn">Close</button></form></div></div></dialog>
+</div></main>
+
+	
+</div>
+
+
+			
+			<script>
+				{
+					__sveltekit_20y93l = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.00d26378.js"),
+						import("./_app/immutable/entry/app.a973aa88.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 4],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

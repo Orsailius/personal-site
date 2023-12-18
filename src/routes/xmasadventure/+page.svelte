@@ -10,6 +10,15 @@
     let resourceName:string = "";
     let items:string[] = [];
     let popup:any;
+    //
+    let thief:number;
+    let grifter:number;
+    let muscle:number;
+    let driver:number;
+    let maxCash = 1000000;
+    let plan = 0;
+    let copAttention = 0;
+    //
 
     const endingList = [
         `Just Chillin'`,
@@ -19,6 +28,18 @@
         `Frakking Big Oil`,
         `Mancer, Cryo Mancer`,
         `Santa's Slay`,
+    ]
+
+    const endingListGrinch = [
+        `High on Christmas`,
+        `It's All Been Done`,
+        `Wallet Two Sizes Too Small`,
+        `Double Cross Your Heart`,
+        `St Knicked`,
+        `Ocean's 25th`,// no cop presence, good max cash
+        `Santa Supreme`,
+        `Red John Wedding`,
+        `Chimney Smoke Monster`
     ]
 
     let gotEndings:string[] = loadEndings();
@@ -136,13 +157,14 @@
                     goto:1
                 },
                 {
-                    text:"Grinch (Coming December 18th)" //Heist Movie
+                    text:"Grinch (Coming December 19th)", //Heist Movie,
+                    //goto:34
                 },
                 {
-                    text:"Baker (Coming December 22nd)" //Hallmark
+                    text:"Baker (Coming December 23rd)" //Hallmark
                 },
                 {
-                    text:"Detective (Coming December 26th)" //Murder Mystery
+                    text:"Detective (Coming December 27th)" //Murder Mystery
                 },
             ]
         },
@@ -810,7 +832,604 @@
                 options: [
                     playAgainChoice
                 ]
-            },
+        },
+        {//34 Grinch Start
+            staticText: "You're a mean one, Mr. Grinch. Tis the season for you to get even meaner.\r"+
+                "As you stare down from your cave, your face makes a scowl. 'I've had enough of these Who folk, maybe I'll throw in the towel'\r"+
+                "When suddenly an idea pops into your head, 'What if I stole Christmas instead!'",
+            options: [
+                {
+                    text:"It's far too crazy a thought, I'll just be depressed and smoka da pot",
+                    action:()=>
+                    {
+                        giveEnding("High on Christmas")
+                    },
+                    goto:35
+                },
+                {
+                    text:"I'll dress up like Santa that loveably chap, and steal all their gifts while their taking a nap",
+                    action:()=>
+                    {
+                        giveEnding("It's All Been Done")
+                    },
+                    goto:36
+                },
+                {
+                    text:"I'll hit the source and burgle Santa's workshop, but I'll need a team, the cream of the crop",
+                    action: ()=>
+                    {
+                        resourceName = "Cash";
+                        resource = 1000;
+                        maxCash = 1000000;
+                    },
+                    goto:37
+                }
+            ]
+        },
+        {//35 
+            staticText: "You're sad cause all day and all night, you'll have to put up Whos in delight'.\r"+
+                "You flop in your chair of bean bag design, and drink some old eggnog from your devilish stein.'\r"+
+                "Rolling wrapping paper as quick a mouse, you call max to get grass on the far side of your house. \r" +
+                "Finally blessed with a moment of peace, you lay back and smoke that sweet christmas wreath\r\r"+
+                "Ending: High on Christmas",
+            options: [
+                playAgainChoice
+            ]
+        },
+         {//36
+            staticText: "Needle is taken to thread as you sew up a suit while you dream up a sled.\r"+
+                "You put antlers on Max to make him look jolly, and suddenly then you realize your folly\r"+
+                "'This is just like I did in the book, all the same. What the bells is even the point of this game' \r" +
+                "*Hey, I let you have your pick, not my fault your boring and not super quick* \r"+
+                "Now you are kinda pissed at this shit, so you just take your ending and proceed to quit \r\r" +
+                "Ending: It's All Been Done",
+            options: [
+                playAgainChoice
+            ]
+        },
+        {//37
+                staticText: "You've made up your mind its the big score you need, but you'll need a crack team to meet your greed\r" +
+                "Now every troupe needs a mind so damn smart, and of course you yourself will be playing that part\r "+
+                "Next, you'll need a cat burglar so light footed and quick, that robbing the workshop will be painless and slick\r" +
+                "You scan the roster of matching spry thieves, but each has an upfront cost you'll need to appease \r"
+                ,
+            options: [
+                {
+                    text:"Selena a woman who's much like a cat, but oddly does not come with a hat. $250 ",
+                    action:()=>
+                    {
+                        thief = 0;
+                        resource -= 250;
+                    },
+                    goto:38
+                },
+                {
+                    text:"Jimmy the Mook is not too bright, but his price happens to make you delight. $100",
+                    action:()=>
+                    {
+                        thief = 1;
+                        resource -= 100;
+                    },
+                    goto:38
+                },
+                {
+                    text:"Francois is said to be sly like the fox, by for his price you hope its not just talk. $400",
+                    action: ()=>
+                    {
+                        thief = 2;
+                        resource -= 400;
+                    },
+                    goto:38
+                }
+            ]
+        },
+          {//38
+            staticText: "The thief is only the first of your team, you'll need more than that to realize your dream\r" +
+                "To dazzle and razzle the sussiest baka, you'll need a scoundrel who can do a the talka\r "+
+                "Back to the postings of criminals sauve, I look for candidate right for the job \r"
+                ,
+            options: [
+                {
+                    text:"Patrick is flashy with smiles and tricks, he's after red john and that's kinda his schtick. $300 ",
+                    action:()=>
+                    {
+                        grifter = 0;
+                        resource -= 300;
+                    },
+                    goto:39
+                },
+                {
+                    text:"Vala will spin you a tale a woe, while robbing you blind from head to toe. $400",
+                    action:()=>
+                    {
+                        grifter = 1;
+                        resource -= 400;
+                    },
+                    goto:39
+                },
+                {
+                    text:"Mr Linus is said to fell from the sky, but I wouldn't believe a word from this guy. $200",
+                    action: ()=>
+                    {
+                        grifter = 2;
+                        resource -= 200;
+                    },
+                    goto:39
+                }
+            ]
+        },
+          {//39
+            staticText: "With the mouth taken care of its time for the muscle, times running out so you begin to hussle\r" +
+                "You flip through the pages of strong men and women, hoping to see you next perfect villain\r "
+                ,
+            options: [
+                {
+                    text:"Kronk is chipper, useful and strong, however the brains in his head might be wrong. $100 ",
+                    action:()=>
+                    {
+                        muscle = 0;
+                        resource -= 100;
+                    },
+                    goto:40
+                },
+                {
+                    text:"Juggernaut tells you his name and calls you a bitch, but he's strong as an ox and could cause some fits. $500",
+                    action:()=>
+                    {
+                        muscle = 1;
+                        resource -= 500;
+                    },
+                    goto:40
+                },
+                {
+                    text:"Xena is a fierce armored amazon who shouts a war cry, ayyi yyyyii iii. $250",
+                    action: ()=>
+                    {
+                        muscle = 2;
+                        resource -= 250;
+                    },
+                    goto:40
+                }
+            ]
+        },
+          {//40
+            staticText: "Last but not least is the getaway driver, you'll need someone fast you can get on fiverr\r"
+                ,
+            options: [
+                {
+                    text:"Its seems you can't afford anyone else, you'll have to put this plan on the shelf",
+                    filter:()=>
+                    {
+                        return resource < 200;
+                    },
+                    action:()=>
+                    {
+                        giveEnding("Wallet Two Sizes Too Small")
+                    },
+                    goto:41
+                },
+                {
+                    text:"Vanellope likes candy and her voice is pitchy, but her special skill is when she's glitchy. $200 ",
+                    action:()=>
+                    {
+                        driver = 0;
+                        resource -= 200;
+                    },
+                    goto:42
+                },
+                {
+                    text:"Ricky shakes and bakes, and likes to go fast, he'll tell you himself if you're not first you're last. $400",
+                    action:()=>
+                    {
+                        driver = 1;
+                        resource -= 400;
+                    },
+                    goto:42
+                },
+                {
+                    text:"Frank is slick, professional and sticks to his rules, never changes the deal unlike some of those fools. $300",
+                    action: ()=>
+                    {
+                        driver = 2;
+                        resource -= 300;
+                    },
+                    goto:42
+                }
+            ]
+        },
+         {//41 
+            staticText: "Without the cash needed to fund your endeavour, you flop on your couch in warm knitted sweater'.\r"+
+                "It seems your wallet was two sizes too small, with your cash maybe you shouldn't have spent it all.'\r"+
+                "You take comfort in knowing in the very least, you can go down to Whosville and steal their roast beast. \r\r" +
+                "Ending: Wallet Two Sizes Too Small",
+            options: [
+                playAgainChoice
+            ]
+        },
+          {//42 
+            staticText: "You've assembled the team, you've done it at last, It's finally time to say hello to the cast'.\r"+
+                "You invite them all over to scheme up a scheme, to pick the best ideas from your custom built team.'\r",
+            options: [
+                {
+                    text:"Screw best ideas your the brains of the op, the brilliantist plans shall come from your top",
+                    goto:43
+                },
+                {
+                    text:"Juggernaut says just to smash through the wall, why even try to do thinking at all",
+                    filter:()=>
+                    {
+                        return muscle == 1;
+                    },
+                    action:()=>
+                    {
+                        plan = 0;
+                    },
+                    goto:44
+                },
+                {
+                    text:"Kronk just repeats whatever you say, its the best plan that you've heard today",
+                    filter:()=>
+                    {
+                        return muscle == 0;
+                    },
+                    goto:43
+                },
+                {
+                    text:"Patrick is sure he can get in with a smile, a quick distraction and dash of fine style",
+                    filter:()=>
+                    {
+                        return grifter == 0;
+                    },
+                    action:()=>
+                    {
+                        plan = 1;
+                    },
+                    goto:44
+                },
+                {
+                    text:"Linus has already thought of plans 2,3, and 4. He's got all the angles to get through that door",
+                    filter:()=>
+                    {
+                        return grifter == 2;
+                    },
+                    action:()=>
+                    {
+                        plan = 2;
+                    },
+                    goto:44
+                },
+                {
+                    text:"Selena thinks prowling is our best approach, find a sneaky way in before we do poach",
+                    filter:()=>
+                    {
+                        return thief == 0;
+                    },
+                    action:()=>
+                    {
+                        plan = 3;
+                    },
+                    goto:44
+                },
+                {
+                    text:"Francois insists his way is the best, avoid lasers; have wires strapped to his chest",
+                    filter:()=>
+                    {
+                        return thief == 2;
+                    },
+                    action:()=>
+                    {
+                        plan = 3;
+                    },
+                    goto:44
+                },
+            ]
+        },
+        {//43 
+            staticText: "Your mind is a marvel that science can't crack, your green hairy head has crime its' singular track'.\r"+
+                "Blueprints, passwords, schemes galore, your brilliance just spills out all over the floor'\r" +
+                "Then you the Grinch got an awfully wonderful thought, the crime of the century is about to be wrought'\r",
+            options: [
+                {
+                    text:"An all frontal assault with un-magnanimous force, like Vikings you'll strike with the heart of the Norse",
+                    action:()=>
+                    {
+                        plan = 0;
+                    },
+                    goto:44
+                },
+                {
+                    text:"With sly wit and cunning you'll bluff your way in, you'll fool St. Nick up to his chinny chin chin",
+                    action:()=>
+                    {
+                        plan = 1;
+                    },
+                    goto:44
+                },
+                {
+                    text:"Through intricate planning and fallbacks en masse, you'll rob Santa's jolly plump cherry red ass",
+                    action:()=>
+                    {
+                        plan = 2;
+                    },
+                    goto:44
+                },
+                {
+                    text:"In the dark night your team will be creeping, to steal all the toys that Santa's been keeping",
+                    action:()=>
+                    {
+                        plan = 3;
+                    },
+                    goto:44
+                }
+            ]
+        },
+        {//44
+            staticText: "With your plan more or less chosen, you get to the car to find that its frozen '.\r"+
+                "After de-icing the car you turn you hop in the seat, and your driver quickly turns up the heat'\r",
+            options: [
+                {
+                    text:"Vanellope put the candy car into gear, your team lets out a quick little cheer",
+                    filter:()=>
+                    {
+                        return driver == 0 && muscle != 0;
+                    },
+                    action:()=>
+                    {
+                        maxCash -= 10000;
+                    },
+                    goto:45
+                },
+                {
+                    text:"Vanellope and Kronk get to talking bout food, it slows your progress but cheers up the mood",
+                    filter:()=>
+                    {
+                        return driver == 0 && muscle == 0;
+                    },
+                    action:()=>
+                    {
+                        maxCash -= 15000;
+                        copAttention--;
+                    },
+                    goto:45
+                },
+                {
+                    text:"Ricky doesn't wait and puts his foot to the pedal, its time for a true test of his meddle",
+                    filter:()=>
+                    {
+                        return driver == 1 && thief != 2;
+                    },
+                    action:()=>
+                    {
+                        copAttention += 3;
+                    },
+                    goto:46
+                },
+                {
+                    text:"Ricky and Francois start yelling quite loud, both it seems are much too proud",
+                    filter:()=>
+                    {
+                        return driver == 1 && thief == 2;
+                    },
+                    action:()=>
+                    {
+                        copAttention += 3;
+                        maxCash -= 5000;
+                    },
+                    goto:46
+                },
+                {
+                    text:"Frank tells you to buckle your seatbelts, and starts driving so fast you see ice melt",
+                    filter:()=>
+                    {
+                        return driver == 2 && grifter != 1;
+                    },
+                    goto:47
+                },
+                {
+                    text:"Vala hits on Frank, it just got weird, it's at this time you wish your mind cleared",
+                    filter:()=>
+                    {
+                        return driver == 2 && grifter == 1;
+                    },
+                    action:()=>
+                    {
+                        maxCash -= 5000;
+                    },
+                    goto:47
+                },
+            ]
+        },
+        {//45 
+            staticText: "Vanellope drives with sweet finesse, down the streets with zero distress'.\r"+
+                "Sadly while driving we spot a candy store, and the breaks are slammed as she shrieks 'S'more!''\r" +
+                "We waste near an hour filling our traps, as our driver gushes over each and every snack'\r",
+            options: [
+                {
+                    text:"After we're all full and stuffed to the brim, we speed to the workshop where our night begins",
+                    goto:48
+                }
+            ]
+        },
+        {//46 
+            staticText: "Ricky speeds over one hundred and fifty, you tell him to slow it, but he just gets shifty'.\r"+
+                "It's not long before a cop catches on, and sirens start blaring so your sanity's gone'\r" +
+                "Ricky manuevers and speeds even faster, at extreme reckless driving it seems Ricky's the master'\r"+
+                "The cops try to desperately to keep on our tail, but Ricky jumps a bridge which ensures theres no jail",
+            options: [
+                {
+                    text:"After we crazily dodged the police, we speed to the workshop to get our piece",
+                    goto:48
+                }
+            ]
+        },
+        {//47 
+            staticText: "Franks shifts like a pro and easily makes it thru snow'.\r"+
+                "A trip uneventful, peaceful and quick. It won't be long til we're robbing St. Nick'\r",
+            options: [
+                {
+                    text:"After we cruised to the workshop unharmed, we see the place has yet be alarmed",
+                    goto:48
+                }
+            ]
+        },
+        {//48 
+            staticText: "You grin with glee as your prize is in sight; Santa's workshop will be emptied this night'.\r"+
+                "The time has begun to enact your plan, you chuckle insanely like a madman '\r",
+            options: [
+                {
+                    text:"Kronk!",
+                    filter:()=>
+                    {
+                        return plan == 0 && muscle == 0;
+                    },
+                    action:()=>
+                    {
+                        maxCash -= 10000;
+                    },
+                    goto:49
+                },
+                {
+                    text:"Juggernaut!",
+                    filter:()=>
+                    {
+                        return plan == 0 && muscle == 1;
+                    },
+                    action:()=>
+                    {
+                        maxCash -= 500000;
+                    },
+                    goto:50
+                },
+                {
+                    text:"Xena!",
+                    filter:()=>
+                    {
+                        return plan == 0 && muscle == 2;
+                    },
+                    action:()=>
+                    {
+                        maxCash -= 50000;
+                        copAttention++;
+                    },
+                    goto:51
+                }
+            ]
+        },
+         {//49 
+            staticText: "Kronk charges the door then comes to stop, he asks the elf guard nicely if we can rob his shop'.\r"+
+                "The elf laughs at first thinking a jest, but Kronk's expression leaves no guess'\r"+
+                "A taser pops out and shocks Kronk a bunch, although he at the same time does land a punch\r"+
+                "Now two bodies are flopped on the ground, you're very surprised they didn't make a sound\r" +
+                "The rest of your team help big Kronk arise, and altering your plan at this point seems wise\r",
+            options: [
+                {
+                    text:"You send in your grifter to con the room, as you sneak the rest to plunder this tomb",
+                    goto:500 //to con plan
+                }
+            ]
+        },
+         {//50 
+            staticText: "Juggernaut charges with reckless intent, the guard gets launched, you know not where he went'.\r"+
+                "Juggernaut misses the door by a good solid meter, and smashes the wall straight into a heater'\r"+
+                "A fire breaks out theres steam everywhere. The chaos is rampant; your man doesn't care\r"+
+                "He charges and charges and breaks everything, including the stuff you were going to wring\r" +
+                "You shout him to 'Stop!' and he finally relents, 'Sure boss, I just needed to vent'\r",
+            options: [
+                {
+                    text:"You look around dismayed at all the carnage, saddened some of your take has turned into garbage",
+                    goto:52 //to takeout
+                }
+            ]
+        },
+        {//51 
+            staticText: "Xena runs in perilous thunder, her warcry tearing guards asunder'.\r"+
+                "She jumps on her prey for a flawless takedown, and launches her chakram turning elves faces to frowns '\r"+
+                "At a crack of a whip the control is hit, and the workshop door opens with gifts ready to ship\r"+
+                "The elves litter the floor, all you hear is their groaning, surely a result of Xena's masterful owning\r",
+            options: [
+                {
+                    text:"This turned out to be way easier than you thought, nothing could stop the team that you brought",
+                    goto:52 //to takeout
+                }
+            ]
+        },
+         {//52 takeout
+            staticText: "Teams thief picks the good stuff out to load into vehicle.\r", //dynamic text i guess
+            //decide to  take valuable item but gain cop attention, goes same node, but one gives max cash & attn
+            options: [
+                {
+                    text:"This turned out to be way easier than you thought, nothing could stop the team that you brought",
+                    goto:53 //santa arrives
+                }
+            ]
+        },
+        {//53 santa arrvices
+            staticText: "Santa arrives and your con man does talking.\r", //dynamic text i guess
+            options: [
+                {
+                    //you fail to talk good
+                    text:"This turned out to be way easier than you thought, nothing could stop the team that you brought",
+                    goto:500 //to santa fight
+                },
+                {
+                    //someone was working with santa this whole time
+                    text:"This turned out to be way easier than you thought, nothing could stop the team that you brought",
+                    goto:500 //to santa fight
+                },
+                {
+                    //someone betrays you and gets away with stuff, you have low cop attn and just are sad but get away
+                    text:"This turned out to be way easier than you thought, nothing could stop the team that you brought",
+                    goto:54 //ending:double cross your heart
+                },
+                {
+                    //someone betrays you and gets away with stuff, you have high cop attn and get in prison
+                    text:"This turned out to be way easier than you thought, nothing could stop the team that you brought",
+                    goto:55 //ending:betrayed and doing time
+                }
+            ]
+        },
+        {//54 double cross sad ending
+            staticText: "Santa arrives and your con man does talking.\r", 
+            options: [
+                playAgainChoice
+            ]
+        },
+        {//55 double cross prison ending
+            staticText: "Santa arrives and your con man does talking.\r", 
+            options: [
+                playAgainChoice
+            ]
+        },
+        {//56 santa fight
+            staticText: "Santa arrives and your con man does talking.\r", 
+            //dynamic text for the fight
+            //we add up the 'combat score' of your team and do a check against santa
+            options: [
+                {
+                    //you beat santa and get away
+                    text:"This turned out to be way easier than you thought, nothing could stop the team that you brought",
+                    goto:57 //ending:St Knicked
+                },
+                {
+                    //santa beats you up and y'all go to prison
+                    text:"This turned out to be way easier than you thought, nothing could stop the team that you brought",
+                    goto:58 //ending: Santa Supreme
+                }
+            ]
+        },
+        {//57 ending st knicked
+            staticText: "Santa arrives and your con man does talking.\r", //dynamic text about amount stole + whether
+            //you gotta hide from cops
+            options: [
+                playAgainChoice
+            ]
+        },
+        {//58 ending santa supreme
+                staticText: "Santa arrives and your con man does talking.\r", //y'all in jail and beat up
+            options: [
+                playAgainChoice
+            ]
+        },
 
     ]
 
@@ -862,7 +1481,7 @@
 
 <svelte:head>
 	<title>Christmas Adventure</title>
-	<meta name="description" content="About this app" />
+	<meta name="description" content="Coming this Christmas: Adventure!" />
 </svelte:head>
 
 <div class="bg-base-100">   
@@ -925,6 +1544,11 @@
                 <div class="grid grid-cols-3 p-2 gap-2">
                     {#each endingList as ending}    
                         <div class={"btn " + (gotEndings.indexOf(ending) >= 0 ? "btn-primary" : "btn-disabled")}>
+                            {ending}
+                        </div>   
+                    {/each}
+                    {#each endingListGrinch as ending}    
+                        <div class={"btn " + (gotEndings.indexOf(ending) >= 0 ? "btn-success" : "btn-disabled")}>
                             {ending}
                         </div>   
                     {/each}

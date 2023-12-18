@@ -135,7 +135,7 @@
 
 <svelte:head>
 	<title>Pokemon Type Hard Counter</title>
-	<meta name="description" content="About this app" />
+	<meta name="description" content="Find Hard Counters for a type combo" />
 </svelte:head>
 
 <div class="bg-base-100">   

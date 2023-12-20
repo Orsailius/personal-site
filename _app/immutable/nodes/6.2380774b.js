@@ -34,14 +34,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Y=h,U=A),L===void 0&&(
 		Save HTML`),S=De(),b=le("div"),R=le("label"),f=le("input"),C=De(),T=le("div"),N=Ye("⇐"),v=De(),O=le("div"),D=Ye("⇒"),F=De(),M.c(),this.h()},l(k){const h=H_("svelte-1v0mh03",bi.head);e=ce(h,"META",{name:!0,content:!0}),h.forEach(J),n=xe(k),r=ce(k,"DIV",{class:!0});var A=de(r);o=ce(A,"H1",{class:!0});var L=de(o);a=qe(L,"Test out your Markdown!"),L.forEach(J),s=xe(A),i=ce(A,"BUTTON",{class:!0});var U=de(i);l=ce(U,"DIV",{});var Y=de(l);c=qe(Y,"💾"),Y.forEach(J),u=qe(U,`
 		Save Markdown`),U.forEach(J),_=xe(A),m=ce(A,"BUTTON",{class:!0});var Z=de(m);p=ce(Z,"DIV",{});var te=de(p);d=qe(te,"💾"),te.forEach(J),E=qe(Z,`
 		Save HTML`),Z.forEach(J),S=xe(A),b=ce(A,"DIV",{class:!0});var re=de(b);R=ce(re,"LABEL",{class:!0});var B=de(R);f=ce(B,"INPUT",{type:!0}),C=xe(B),T=ce(B,"DIV",{class:!0});var z=de(T);N=qe(z,"⇐"),z.forEach(J),v=xe(B),O=ce(B,"DIV",{class:!0});var $=de(O);D=qe($,"⇒"),$.forEach(J),B.forEach(J),re.forEach(J),F=xe(A),M.l(A),A.forEach(J),this.h()},h(){bi.title="Markdown Editor",ue(e,"name","description"),ue(e,"content","About this app"),ue(o,"class","text-4xl p-8 font-semibold"),ue(i,"class","btn ml-8"),ue(m,"class","btn ml-8"),ue(f,"type","checkbox"),ue(T,"class","swap-on fill-current text-4xl"),ue(O,"class","swap-off fill-current text-4xl"),ue(R,"class","swap"),ue(b,"class","fixed left-0 inset-y-1/2"),ue(r,"class","bg-base-100")},m(k,h){K(bi.head,e),Ze(k,n,h),Ze(k,r,h),K(r,o),K(o,a),K(r,s),K(r,i),K(i,l),K(l,c),K(i,u),K(r,_),K(r,m),K(m,p),K(p,d),K(m,E),K(r,S),K(r,b),K(b,R),K(R,f),f.checked=t[1],K(R,C),K(R,T),K(T,N),K(R,v),K(R,O),K(O,D),K(r,F),M.m(r,null),y||(q=[at(i,"click",t[3]),at(m,"click",t[4]),at(f,"change",t[5])],y=!0)},p(k,[h]){h&2&&(f.checked=k[1]),H===(H=ee(k))&&M?M.p(k,h):(M.d(1),M=H(k),M&&(M.c(),M.m(r,null)))},i:Hi,o:Hi,d(k){J(e),k&&J(n),k&&J(r),M.d(),y=!1,Kc(q)}}}function wf(t,e,n){let r;const o=Re({html:!0,highlight(p,d){if(d&&$c.getLanguage(d))try{return $c.highlight(p,{language:d}).value}catch{}return""},linkify:!0,typographer:!0}).use(Um).use(Xm).use(iE);let a=`
-__Advertisement :)__
-
-- __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image
-  resize in browser.
-- __[babelfish](https://github.com/nodeca/babelfish/)__ - developer friendly
-  i18n with plurals support and easy syntax.
-
-You will like those projects!
+__Merry Christmas :)__
 
 ---
 # h1 Heading 8-)

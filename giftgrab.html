@@ -6,7 +6,6 @@
 		<meta name="viewport" content="width=device-width" />
 		
 		<link href="./_app/immutable/assets/0.b2316fd9.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/12.719fc3b2.css" rel="stylesheet">
 		<link rel="modulepreload" href="./_app/immutable/entry/start.6c35223b.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index.54b28828.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.c59ffe24.js">
@@ -14,7 +13,7 @@
 		<link rel="modulepreload" href="./_app/immutable/entry/app.d86c40e9.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.a4192956.js">
 		<link rel="modulepreload" href="./_app/immutable/nodes/0.e2d3a491.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/12.f666dd6d.js"><title>Old Timey Video</title><!-- HEAD_svelte-1ewx5fb_START --><meta name="description" content="About this app"><!-- HEAD_svelte-1ewx5fb_END -->
+		<link rel="modulepreload" href="./_app/immutable/nodes/9.5119007b.js"><title></title><!-- HEAD_svelte-1m3no33_START --><meta name="description" content="About this app"><!-- HEAD_svelte-1m3no33_END -->
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
@@ -58,20 +57,9 @@
 
 	<main class="relative">
 
-<div class="bg-base-100"><h1 class="text-4xl pt-8 font-semibold text-center">Watch video like back in the day!</h1>
-	<div class="grid m-4 ml-8 mr-8 grid-rows-3 grid-cols-1 md:grid-cols-3 md:grid-rows-1"><label class="form-control p-2 col-span-1"><div class="label"><span class="label-text">Era</span></div>
-			<select class="select select-bordered select-primary select-larg"><option value="0">Black and White</option><option value="1">Sepia</option><option value="2">CRT</option><option value="3">Low Rez</option></select></label>
-		<label class="form-control p-2 col-span-2"><div class="label"><span class="label-text">Youtube Video URL</span></div>
-			<input type="text" placeholder="Video link" class="input input-bordered" value="https://www.youtube.com/embed/gnEIeVWLtbU"></label></div>	
-	<div class="m-8 mr-16 video-container  svelte-2nr8zf"><iframe class="responsive-iframe greyscale svelte-2nr8zf" src="https://www.youtube.com/embed/gnEIeVWLtbU" title="Ice Ice MATRIX" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
-
-
-
-<svg><filter id="crt"><feTurbulence id="turbulence" type="turbulence" baseFrequency="0.00001 0.00002" numOctaves="1" result="NOISE"></feTurbulence><feDisplacementMap id="displace" in="SourceGraphic" in2="NOISE" scale="2"></feDisplacementMap><animate xlink:href="#turbulence" attributeName="baseFrequency" dur="60s" keyTimes="0;0.5;1" values="0.01 0.02;0.02 0.04;0.01 0.02" repeatCount="indefinite"></animate><feMorphology in="displace" operator="erode" radius="0.25"></feMorphology></filter></svg>
-
-<svg><filter id="convolve"><feConvolveMatrix id="emboss" kernelMatrix="-2 -1 0 
-		-1 1 1 
-		0 1 2"></feConvolveMatrix><feMorphology in="emboss" operator="dilate" radius="1"></feMorphology></filter></svg></main>
+<div class="bg-base-100 h-full" style="min-height:92.25vh"><h1 class="text-4xl pt-8 font-semibold text-center mb-4">Gift Grab</h1>     
+    <div id="phaser" style="max-height:75vh"></div>
+</div></main>
 
 	
 </div>
@@ -94,7 +82,7 @@
 						import("./_app/immutable/entry/app.d86c40e9.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
-							node_ids: [0, 12],
+							node_ids: [0, 9],
 							data,
 							form: null,
 							error: null

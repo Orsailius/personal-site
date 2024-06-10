@@ -35,7 +35,7 @@
 </svelte:head>
 
 <div class="bg-base-100">
-	<h1 class="text-4xl pt-8 font-semibold ">Watch video like back in the day!</h1>
+	<h1 class="text-4xl pt-8 font-semibold text-center">Watch video like back in the day!</h1>
 	<div class="grid m-4 ml-8 mr-8 grid-rows-3 grid-cols-1 md:grid-cols-3 md:grid-rows-1">
 		<label class="form-control p-2 col-span-1">
 			<div class="label">

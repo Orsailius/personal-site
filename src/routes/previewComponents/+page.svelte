@@ -24,7 +24,7 @@
 		ContactForm,
 		DataTable4D,
 		VideoPlayer,
-		ProjectCard];
+		ProjectCard,];
 	let infos = [
 		SkillSlideInfo, 
 		StarRatingInfo, 
@@ -33,9 +33,9 @@
 		ContactFormInfo,
 		DataTable4DInfo,
 		VideoPlayerInfo,
-		ProjectCardInfo];
+		ProjectCardInfo,];
 
-	let currentComponent = 10;
+	let currentComponent = 8;
 
 </script>
 <svelte:head>

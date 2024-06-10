@@ -203,7 +203,7 @@
 </svelte:head>
 
 <div class="bg-base-100 h-full" style="min-height:92.25vh">   
-	<h1 class="text-4xl pt-8 font-semibold">How Long Until..?</h1>
+	<h1 class="text-4xl pt-8 font-semibold text-center">How Long Until..?</h1>
     <div class="w-full flex pr-8 pt-2 justify-center">
         <button class="btn btn-accent" on:click={()=>popup.showModal()}>
             + Add Date

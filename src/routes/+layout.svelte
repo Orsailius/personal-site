@@ -2,11 +2,22 @@
 	import Header from './Header.svelte';
 	import './styles.css';
 	import "../app.css";
+    import { onMount } from 'svelte';
 	export const prerender = true;
+
+	let path = "/";
+
+	onMount(() =>
+	{		
+		path = window.location.pathname;
+	});
+
 </script>
 
 <div class="app">
-	<Header />
+	{#if !path.endsWith("cardgame")}
+		<Header />
+	{/if}
 
 	<main class="relative">
 		<slot />

@@ -27,14 +27,7 @@
 		}).use(emoji).use(markdownAttrs).use(markdownFootnote)		
 
 	let defaultMarkdown = `
-__Advertisement :)__
-
-- __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image
-  resize in browser.
-- __[babelfish](https://github.com/nodeca/babelfish/)__ - developer friendly
-  i18n with plurals support and easy syntax.
-
-You will like those projects!
+__Merry Christmas :)__
 
 ---
 # h1 Heading 8-)
@@ -254,7 +247,7 @@ Duplicated footnote reference[^second].
 </svelte:head>
 
 <div  class="bg-base-100">
-	<h1 class="text-4xl p-8 font-semibold">Test out your Markdown!</h1>
+	<h1 class="text-4xl p-8 font-semibold text-center">Test out your Markdown!</h1>
 	<button class="btn ml-8" on:click={saveMarkdownFile}>
 		<div>&#128190</div>
 		Save Markdown

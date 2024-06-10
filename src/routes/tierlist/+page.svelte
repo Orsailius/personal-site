@@ -167,7 +167,7 @@
 </svelte:head>
 
 <div class="bg-base-100 h-full" style="min-height:92.25vh">   
-	<h1 class="text-4xl pt-8 font-semibold">Rank Christmas Movies!</h1>
+	<h1 class="text-4xl pt-8 font-semibold text-center">Rank Christmas Movies!</h1>
 	<div class="grid m-4 ml-8 mr-8 grid-cols-6 gap-2">
         <div class="col-span-2 bg-secondary rounded-xl">
             <div class="w-full w-16 flex justify-center items-center" style="background-color:#33333333;min-height:5vh">

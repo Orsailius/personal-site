@@ -73,7 +73,7 @@
 </svelte:head>
 
 <div  class="bg-base-100">   
-	<h1 class="text-4xl p-8 font-semibold">Make a Cool Title</h1>
+	<h1 class="text-4xl p-8 font-semibold text-center">Make a Cool Title</h1>
     <div style={"background-color: " + backgroundColor +"; min-height:33vh"}  
         class="flex bg-base-300 border border-base-500
         rounded-b-box rounded-tr-box relative items-center justify-center">	

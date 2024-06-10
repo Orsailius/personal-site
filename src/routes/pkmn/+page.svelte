@@ -139,7 +139,7 @@
 </svelte:head>
 
 <div class="bg-base-100">   
-	<h1 class="text-4xl pt-8 font-semibold">Find A Hard Counter</h1>
+	<h1 class="text-4xl pt-8 font-semibold text-center">Find A Hard Counter</h1>
 	<div class="grid m-4 ml-8 mr-8 grid-rows-3 grid-cols-1 md:grid-cols-3 md:grid-rows-1">
         <PokemonTypeSelector bind:type={firstTypeIndex} title={"Pick the Pokemon's first type"}/>   
         <PokemonTypeSelector bind:type={secondTypeIndex} title={"Pick the Pokemon's second type"}/>   

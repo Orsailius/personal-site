@@ -1363,7 +1363,7 @@
                 }
             ]
         },
-        {//53 santa arrvices
+        {//53 santa arrives
             staticText: "Santa arrives and your con man does talking.\r", //dynamic text i guess
             options: [
                 {

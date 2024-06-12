@@ -19,6 +19,7 @@ export default class TextData
     showCurve:boolean = false;
     //
     positionX:number = 0;
+    positionXType:string = "%";
     positionY:number = 0;
-
+    positionYType:string = "%";
 }

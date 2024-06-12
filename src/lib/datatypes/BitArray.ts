@@ -17,7 +17,7 @@ export default class BitArray extends DataView
   
     get length()
     {
-      return this.buffer.byteLength << 3;
+        return this.buffer.byteLength << 3;
     }
   
     get popcount()

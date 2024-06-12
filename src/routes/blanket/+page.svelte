@@ -3,6 +3,7 @@
     import TextData from '$lib/datatypes/TextData';   
     import { writable, type Writable } from "svelte/store";
     import galleries from '$lib/datatypes/Gallery';
+    import { text } from 'svelte/internal';
 
     class PathInfo
     {
@@ -39,10 +40,16 @@
     let borderImage:string = "/images/aipaint/Eye0.png";
     let landscape = false;
     let image:string = "/images/aipaint/Eye0.png";
+    let isFixed = true;
 
     function setChosenImage(imageChosen:string)
     {
         image = imageChosen;
+    }
+
+    function toggleFixed()
+    {
+        isFixed = !isFixed;
     }
 	
 </script>
@@ -52,17 +59,26 @@
 	<meta name="description" content="About this app" />
 </svelte:head>
 
-<div class="w-full">
-    <h1 class="text-4xl p-4 font-semibold text-center">Design a Blanket</h1>
+<div class="w-full">    
     <div class="flex flex-col lg:grid lg:grid-cols-6">   
-        <div class="col-span-4 bg-slate-800 flex justify-center">
+        <div class="w-full lg:col-span-4 bg-slate-800 flex justify-center" style="z-index:100" class:hidden={!isFixed}>
+            <div class="relative m-2 outline outline-dotted outline-white" class:landscape={landscape} style="height:50vh;weight:25vh;">
+                <div class="main-image" style={"background-image: url(" + image +");"}>
+
+                </div>  
+            </div>
+            <button class="btn bg-slate-600" on:click={toggleFixed}>
+                
+            </button>            
+        </div>   
+        <div class="w-full lg:col-span-4 bg-slate-800 flex justify-center" style="z-index:100" class:fixed={isFixed}>
             <div class="relative m-2 outline outline-dotted outline-white" class:landscape={landscape} style="height:50vh;weight:25vh;">
                 <div class="main-image" style={"background-image: url(" + image +");"}>
 
                 </div>        
                 <div class="flex h-full  absolute top-0 left-0
                     relative items-center justify-center" 
-                    style={"transform: translate(" + $textData.positionX + "%," + $textData.positionY + "%)"}>	
+                    style={"transform: translate(" + $textData.positionX + "" + $textData.positionXType+ ",-" + $textData.positionY + "" + $textData.positionYType + ")"}>	
                     <svg viewBox="-960 -540 1920 1080" class="w-full" style="max-height:300px;">
                         {#if $textData.showCurve}
                             <path id="curve" d={paths[$textData.pathId].builder($textData.curviness, $textData.pathScale)}/>
@@ -81,9 +97,13 @@
                 <!--<div class="border-image" style={"background-image: url(\"" + borderImage + "\");"}>
     
                 </div>-->
-            </div>            
-        </div>   
-        <div class="col-span-2 bg-slate-200 p-1"> 
+            </div>
+            <button class="btn bg-slate-600" on:click={toggleFixed}>
+                
+            </button>            
+        </div>         
+        <div class="col-span-2 bg-slate-200 p-1">
+            <h1 class="text-4xl p-4 font-semibold text-center">Design a Blanket</h1> 
             <div class="tabs tabs-lifted pt-1 md:pt-5">
                 <input type="radio" name="tabs" role="tab" class="tab bg-slate-300 text-lg font-semibold" aria-label="Image"/>
                 <div role="tabpanel" class="tab-content bg-blue-200  rounded-tr rounded-br rounded-bl">
@@ -145,6 +165,7 @@
     .main-image
     {        
         position: absolute;
+        background-size:cover;
         top: 0px;
         left: 0px;
         width: 100%;

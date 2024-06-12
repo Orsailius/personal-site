@@ -50,8 +50,8 @@
     ]	
 </script>
 
-<div class="flex flex-wrap m-4">
-    <div class="flex items-center p-2">
+<div class="flex flex-wrap m-4 gap-1">
+    <div class="flex items-center">
         <label class="form-control w-full max-w-xs">
             <div class="label">
                 <span class="label-text">Title Text</span>
@@ -59,16 +59,16 @@
             <input type="text" bind:value={$textData.titleText} placeholder="Type here" class="input input-bordered w-full max-w-xs" />
         </label>
     </div>
-    <div class="flex items-center p-2">
-        <!-- svelte-ignore a11y-label-has-associated-control -->
+    <!--<div class="flex items-center">
+        svelte-ignore a11y-label-has-associated-control
         <label class="form-control w-full max-w-xs">
             <div class="label">
                 <span class="label-text">Background Colour</span>
             </div>          
             <ColorInput bind:color={$textData.backgroundColor} onSelect={(c)=>{}}/>
         </label>
-    </div>
-    <div class="flex items-center p-2">
+    </div>-->
+    <div class="flex items-center">
         <!-- svelte-ignore a11y-label-has-associated-control -->
         <label class="form-control w-full max-w-xs">
             <div class="label">
@@ -77,7 +77,7 @@
             <ColorInput bind:color={$textData.fontColor} onSelect={(c)=>{}}/>
         </label>
     </div>
-    <div class="flex items-center p-2">
+    <div class="flex items-center">
         <label class="form-control w-full max-w-xs">
             <div class="label">
                 <span class="label-text">Font Size</span>
@@ -93,7 +93,7 @@
             </div>                
         </label>
     </div>
-    <div class="flex items-center p-2">
+    <div class="flex items-center">
         <label class="form-control w-full max-w-xs">
             <div class="label">
                 <span class="label-text">Font</span>
@@ -106,7 +106,7 @@
             </datalist> 
         </label>
     </div>
-    <div class="flex items-center p-2">
+    <div class="flex items-center">
         <label class="form-control w-full max-w-xs">
             <div class="label">
                 <span class="label-text">Font Weight</span>
@@ -114,7 +114,7 @@
             <input type="number" bind:value={$textData.fontWeight} class="input input-bordered w-full max-w-xs" />
         </label>
     </div>
-    <div class="flex items-center p-2">
+    <div class="flex items-center">
         <label class="form-control w-full max-w-xs">
             <div class="label">
                 <span class="label-text">Rotate</span>
@@ -130,19 +130,49 @@
             </div>                
         </label>
     </div>
-    <div class="grid grid-cols-2 items-center mt-8 p-2">
+    <div class="flex items-center">
+        <label class="form-control w-full max-w-xs">
+            <div class="label">
+                <span class="label-text">Horizontal Offset</span>
+            </div>
+            <div class="join">
+                <input type="number" bind:value={$textData.positionX} placeholder="Type here" class="input input-bordered w-full max-w-xs join-item" />
+                <select bind:value={$textData.positionXType} class="select select-bordered w-full max-w-xs join-item">
+                    <option value="px">px</option>
+                    <option value="em">em</option>
+                    <option value="%" selected>%</option>
+                    <option value="vw">vw</option>
+                    </select>
+            </div>                
+        </label>
+        <label class="form-control w-full max-w-xs">
+            <div class="label">
+                <span class="label-text">Vertical Offset</span>
+            </div>
+            <div class="join">
+                <input type="number" bind:value={$textData.positionY} placeholder="Type here" class="input input-bordered w-full max-w-xs join-item" />
+                <select bind:value={$textData.positionYType} class="select select-bordered w-full max-w-xs join-item">
+                    <option value="px" >px</option>
+                    <option value="em">em</option>
+                    <option value="%" selected>%</option>
+                    <option value="vw">vw</option>
+                    </select>
+            </div>                
+        </label>
+    </div>
+    <div class="grid grid-cols-2 items-center">
         <div class="text-center p-2">
             Italics?
         </div>
         <input type="checkbox" bind:checked={$textData.isItalics} class="checkbox checkbox-primary" />
     </div>    
-    <div class="grid grid-cols-2 items-center mt-8 p-2">
+    <div class="grid grid-cols-2 items-center">
         <div class="text-center p-2">
             Flip?
         </div>
         <input type="checkbox" bind:checked={$textData.isFlipped} class="checkbox checkbox-primary" />
     </div> 
-    <div class="flex items-center p-2 col-span-2 md:col-span-1">
+    <div class="flex items-center col-span-2 md:col-span-1">
         <label class="form-control w-full max-w-xs">
             <div class="label">
                 <span class="label-text">Outline</span>
@@ -159,7 +189,7 @@
             </div>            
         </label>
     </div>
-    <div class="flex items-center p-2 col-span-2 lg:col-span-1">
+    <div class="flex items-center col-span-2 lg:col-span-1">
         <label class="form-control w-full max-w-xs">
             <div class="label">
                 <span class="label-text">Path</span>

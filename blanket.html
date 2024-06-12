@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="coolLight">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		
+		<link href="./_app/immutable/assets/0.7cebdc64.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/7.0e6112f0.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.0d98af52.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.6d7bdd34.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.46224434.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.51b9d3bc.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.72765595.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.a4192956.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.b7b3bcb3.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/7.b4f2a86d.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/ColorInput.2f174b30.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Gallery.1ad065a0.js"><title>Blanket Tool</title><!-- HEAD_svelte-6n7l20_START --><meta name="description" content="About this app"><!-- HEAD_svelte-6n7l20_END -->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+
+
+
+<div class="app svelte-15wssfg"><header class="sticky top-0 z-50 svelte-11j7kyy"><div class="navbar bg-base-200"><div class="navbar-start"><div class="dropdown"><div tabindex="-1" class="btn btn-ghost lg:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path></svg></div>
+					<ul tabindex="-1" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+						<li><details><summary>15 Days of Website</summary>
+								<ul class="bg-base-200 rounded-t-none"><li><a href="/xmasadventure">Christmas Adventure</a></li>
+									<li><a href="/otv">Old Timey Video
+										</a></li><li><a href="/fonttitle">Font Title Tool
+										</a></li><li><a href="/pkmn">Pokemon Hard Counter
+										</a></li><li><a href="/markdown">Markdown Editor
+										</a></li><li><a href="/tierlist">Christmas Movie Tierlist
+										</a></li><li><a href="/countonthis">How Long Until?
+										</a></li><li><a href="/hotdog">Hotdog, No Hotdog!
+										</a></li><li><a href="/aiart">AI Art Gallery
+										</a></li><li><a href="/giftgrab">Gift Grab
+										</a></li><li><a href="/cryptogram">Movie Quote Cryptogram
+										</a></li><li><a href="/aipaint">AI Paint Brush
+										</a></li><li><a href="/wikipresent">Wiki Presenter
+										</a></li><li><a href="/funkypiano">Funky Piano
+										</a></li><li><a href="/fireworks">Fireworks
+										</a></li></ul></details></li></ul></div>
+			</div>
+			<div class="navbar-center hidden lg:flex"><ul class="menu menu-horizontal px-1">
+					
+					<li><details><summary>15 Days of Website</summary>
+							<ul class="bg-base-200 rounded-t-none"><li><a href="/xmasadventure">Christmas Adventure</a></li>
+								<li><a href="/otv">Old Timey Video
+								</a></li><li><a href="/fonttitle">Font Title Tool
+								</a></li><li><a href="/pkmn">Pokemon Hard Counter
+								</a></li><li><a href="/markdown">Markdown Editor
+								</a></li><li><a href="/tierlist">Christmas Movie Tierlist
+								</a></li><li><a href="/countonthis">How Long Until?
+								</a></li><li><a href="/hotdog">Hotdog, No Hotdog!
+								</a></li><li><a href="/aiart">AI Art Gallery
+								</a></li><li><a href="/giftgrab">Gift Grab
+								</a></li><li><a href="/cryptogram">Movie Quote Cryptogram
+								</a></li><li><a href="/aipaint">AI Paint Brush
+								</a></li><li><a href="/wikipresent">Wiki Presenter
+								</a></li><li><a href="/funkypiano">Funky Piano
+								</a></li><li><a href="/fireworks">Fireworks
+								</a></li></ul></details></li></ul></div>
+			<div class="navbar-end"><label class="swap swap-rotate"><input type="checkbox" data-toggle-theme="coolDark,coolLight" data-act-class="ACTIVECLASS">
+					<svg class="swap-off fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"></path></svg>
+					<svg class="swap-on fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"></path></svg></label>
+			</div></div>
+</header>
+
+	<main class="relative">
+
+<div class="w-full"><div class="flex flex-col lg:grid lg:grid-cols-6"><div class="w-full lg:col-span-4 bg-slate-800 flex justify-center" style="z-index:100"><div class="relative m-2 outline outline-dotted outline-white svelte-d5b2pu" style="height:50vh;weight:25vh;"><div class="main-image svelte-d5b2pu" style="background-image: url(/images/aipaint/Eye0.png);"></div></div>
+            <button class="btn bg-slate-600"></button></div>   
+        <div class="w-full lg:col-span-4 bg-slate-800 flex justify-center fixed" style="z-index:100"><div class="relative m-2 outline outline-dotted outline-white svelte-d5b2pu" style="height:50vh;weight:25vh;"><div class="main-image svelte-d5b2pu" style="background-image: url(/images/aipaint/Eye0.png);"></div>        
+                <div class="flex h-full absolute top-0 left-0 relative items-center justify-center" style="transform: translate(0%,-0%)"><svg viewBox="-960 -540 1920 1080" class="w-full" style="max-height:300px;"><path id="curve" d="M-1900,0 L1900,0" fill="transparent"></path><text x="25" style="text-anchor:middle; fill:#ffffff; font-size:399.36px;font-family:Bitter;font-weight: 400;transform: rotate(0deg) ;" class="" paint-order="stroke" stroke="#000000" stroke-width="0"><textPath xlink:href="#curve" startOffset="50%" alignment-baseline="central">My Title</textPath></text></svg></div>
+                </div>
+            <button class="btn bg-slate-600"></button></div>         
+        <div class="col-span-2 bg-slate-200 p-1"><h1 class="text-4xl p-4 font-semibold text-center">Design a Blanket</h1> 
+            <div class="tabs tabs-lifted pt-1 md:pt-5"><input type="radio" name="tabs" role="tab" class="tab bg-slate-300 text-lg font-semibold" aria-label="Image">
+                <div role="tabpanel" class="tab-content bg-blue-200 rounded-tr rounded-br rounded-bl"><div class="col-span-2 rounded-xl galleryList" style="background-color:#556677"><div class="w-full flex justify-center items-center" style="background-color:#33333333;min-height:5vh"><div class="text-center align-center end text-2xl font-semibold text-white" style="font-family:Bitter">Galleries
+                            </div></div>
+                        <div class="flex flex-wrap gap-1 p-4 items-center place-content-around" style="min-height:70vh"><button class="flex flex-col justify-center items-center"><img src="/images/artwork/christmas/CandyCanes.jpg" alt="Candy Canes" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">AI Christmas</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/christmas/ChristmasTree.jpg" alt="Christmas Tree" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">AI Christmas</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/christmas/Dinner.jpg" alt="Christmas Dinner" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">AI Christmas</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/christmas/Elves.jpg" alt="Elves" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">AI Christmas</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/christmas/Gingerbread.jpg" alt="Gingerbread" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">AI Christmas</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/christmas/Grinch.jpg" alt="Grinch" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">AI Christmas</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/christmas/Lights.jpg" alt="Christmas Lights" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">AI Christmas</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/christmas/MrsClaus.jpg" alt="Mrs. Claus" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">AI Christmas</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/christmas/Ornaments.jpg" alt="Ornaments" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">AI Christmas</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/christmas/Presents.jpg" alt="Presents" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">AI Christmas</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/christmas/Reindeer.jpg" alt="Reindeer" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">AI Christmas</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/christmas/Santa.jpg" alt="Santa" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">AI Christmas</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/christmas/Sleigh.jpg" alt="Sleigh" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">AI Christmas</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/christmas/Snoman.jpg" alt="Snowman" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">AI Christmas</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/christmas/Wreath.jpg" alt="Wreath" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">AI Christmas</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/cards/Aqueduct.jpg" alt="Aquedect" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">Card Art</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/cards/ArchimedesIsles.jpg" alt="ArchimedesIsles" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">Card Art</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/cards/Blackbeard.jpg" alt="Blackbeard" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">Card Art</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/cards/Brownies.jpg" alt="Brownies" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">Card Art</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/cards/DragonTamer.jpg" alt="Dragon Tamer" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">Card Art</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/cards/FarmHouse.jpg" alt="Farm House" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">Card Art</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/cards/FrozenLake.jpg" alt="Frozen Lake" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">Card Art</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/cards/HPLovecat.jpg" alt="H.P. Lovecat" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">Card Art</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/cards/IceMage.jpg" alt="Ice Mage" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">Card Art</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/cards/Rebellious.jpg" alt="Rebellious" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">Card Art</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/cards/Rockstar.jpg" alt="Rockstar" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">Card Art</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/cards/Ruins.jpg" alt="Ruins" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">Card Art</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/cards/SeaCreature.jpg" alt="Octopus?" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">Card Art</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/cards/ShihTzu.jpg" alt="Shih Tzu" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">Card Art</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/cards/TheButler.jpg" alt="The Butler" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">Card Art</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/misc/Andes.png" alt="Andes" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">Misc</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/misc/ColourHills.png" alt="Colour Hills" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">Misc</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/misc/CyberpunkCozy.png" alt="Cyberpunk Cozy" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">Misc</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/misc/Detective.png" alt="Detective" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">Misc</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/misc/Divine.png" alt="Divine" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">Misc</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/misc/EdgeOfInfinity.png" alt="Edge Of Infinity" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">Misc</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/misc/Einstein.png" alt="Einstein" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">Misc</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/misc/FluffPuppy.png" alt="Fluff Puppy" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">Misc</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/misc/Jack.png" alt="Jack" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">Misc</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/misc/Jerry.png" alt="Jerry" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">Misc</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/misc/Lighthouse.png" alt="Lighthouse" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">Misc</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/misc/Lucinda.png" alt="Lucinda" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">Misc</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/misc/ModernDisney.png" alt="Modern Disney" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">Misc</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/misc/MountainForest.png" alt="Mountain Forest" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">Misc</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/misc/Neon.png" alt="Neon" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">Misc</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/misc/ParisStreets.png" alt="Streets of Paris" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">Misc</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/misc/Pose.png" alt="Pose" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">Misc</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/misc/Ragnorak.png" alt="Ragnorak" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">Misc</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/misc/Sloth.png" alt="Sloth" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">Misc</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/misc/Sunset.png" alt="Sunset" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">Misc</div>    
+                                    </button><button class="flex flex-col justify-center items-center"><img src="/images/artwork/misc/Winter.png" alt="Winter" class="rounded-xl" style="max-width:120px; width:100%">
+                                        <div class="text-center text-white">Misc</div>    
+                                    </button></div></div></div>  
+                <input type="radio" name="tabs" role="tab" class="tab bg-slate-300 text-lg font-semibold" aria-label="Text" checked>
+                <div role="tabpanel" class="tab-content bg-slate-200 rounded-tr rounded-br rounded-bl"><div class="flex flex-wrap m-4 gap-1"><div class="flex items-center"><label class="form-control w-full max-w-xs"><div class="label"><span class="label-text">Title Text</span></div>
+            <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" value="My Title"></label></div>
+    
+    <div class="flex items-center">
+        <label class="form-control w-full max-w-xs"><div class="label"><span class="label-text">Font Colour</span></div>          
+            <div class="join"><input class="join-item input input-bordered input-primary w-full max-w-xs" value="#ffffff">
+    <input type="color" class="join-item input p-0 pr-1 pl-1 input-bordered input-primary bg-base-200" value="#ffffff">
+</div></label></div>
+    <div class="flex items-center"><label class="form-control w-full max-w-xs"><div class="label"><span class="label-text">Font Size</span></div>
+            <div class="join"><input type="number" placeholder="Type here" class="input input-bordered w-full max-w-xs join-item" value="96">
+                <select class="select select-bordered w-full max-w-xs join-item"><option value="px" selected>px</option><option value="em">em</option><option value="%">%</option><option value="vw">vw</option></select></div></label></div>
+    <div class="flex items-center"><label class="form-control w-full max-w-xs"><div class="label"><span class="label-text">Font</span></div>
+            <input list="fonts" class="input input-bordered w-full max-w-xs" value="Bitter">
+            <datalist id="fonts"><option value="Arial"></option><option value="Bitter"></option><option value="Domine"></option><option value="Garamond"></option><option value="Lato"></option><option value="Lobster"></option><option value="Open Sans"></option><option value="Pacifico"></option><option value="Public Sans"></option><option value="Roboto"></option><option value="Rubik"></option><option value="Times New Roman"></option></datalist></label></div>
+    <div class="flex items-center"><label class="form-control w-full max-w-xs"><div class="label"><span class="label-text">Font Weight</span></div>
+            <input type="number" class="input input-bordered w-full max-w-xs" value="400"></label></div>
+    <div class="flex items-center"><label class="form-control w-full max-w-xs"><div class="label"><span class="label-text">Rotate</span></div>
+            <div class="join"><input type="number" class="input input-bordered w-full max-w-xs join-item" value="0">
+                <select class="select select-bordered w-full max-w-xs join-item"><option value="deg" selected>deg</option><option value="turn">turn</option><option value="rad">rad</option><option value="grad">grad</option></select></div></label></div>
+    <div class="flex items-center"><label class="form-control w-full max-w-xs"><div class="label"><span class="label-text">Horizontal Offset</span></div>
+            <div class="join"><input type="number" placeholder="Type here" class="input input-bordered w-full max-w-xs join-item" value="0">
+                <select class="select select-bordered w-full max-w-xs join-item"><option value="px">px</option><option value="em">em</option><option value="%" selected>%</option><option value="vw">vw</option></select></div></label>
+        <label class="form-control w-full max-w-xs"><div class="label"><span class="label-text">Vertical Offset</span></div>
+            <div class="join"><input type="number" placeholder="Type here" class="input input-bordered w-full max-w-xs join-item" value="0">
+                <select class="select select-bordered w-full max-w-xs join-item"><option value="px">px</option><option value="em">em</option><option value="%" selected>%</option><option value="vw">vw</option></select></div></label></div>
+    <div class="grid grid-cols-2 items-center"><div class="text-center p-2">Italics?
+        </div>
+        <input type="checkbox" class="checkbox checkbox-primary"></div>    
+    <div class="grid grid-cols-2 items-center"><div class="text-center p-2">Flip?
+        </div>
+        <input type="checkbox" class="checkbox checkbox-primary"></div> 
+    <div class="flex items-center col-span-2 md:col-span-1"><label class="form-control w-full max-w-xs"><div class="label"><span class="label-text">Outline</span></div>
+            <div class="join"><input type="number" class="input input-bordered w-full max-w-xs join-item" value="0">  
+                <div class="join-item"><div class="join"><input class="join-item input input-bordered input-primary w-full max-w-xs" value="#000000">
+    <input type="color" class="join-item input p-0 pr-1 pl-1 input-bordered input-primary bg-base-200" value="#000000">
+</div></div></div>    
+            <div class="label"><span class="label-text">Width</span>
+                <span class="label-text">Color</span></div></label></div>
+    <div class="flex items-center col-span-2 lg:col-span-1"><label class="form-control w-full max-w-xs"><div class="label"><span class="label-text">Path</span></div>
+            <div class="join"><select class="select select-bordered w-full max-w-xs join-item"><option value="0">Straight</option><option value="1">Hill</option><option value="2">Wave</option></select>
+                <input type="number" class="input input-bordered w-full max-w-xs join-item" value="2">                                      
+                <input type="number" class="input input-bordered w-full max-w-xs join-item" value="12">
+                <input type="checkbox" class="checkbox checkbox-primary mt-3"></div>    
+            <div class="label"><span class="label-text">Type</span>
+                <span class="label-text">Curviness</span>
+                <span class="label-text">Scale</span>
+                <span class="label-text">Show</span></div></label></div>    
+</div></div>
+                <input type="radio" name="tabs" role="tab" class="tab bg-slate-300 text-lg font-semibold" aria-label="Border">
+                <div role="tabpanel" class="tab-content bg-orange-200 rounded-tr rounded-br rounded-bl"></div></div></div></div>
+</div></main>
+
+	
+</div>
+
+
+			
+			<script>
+				{
+					__sveltekit_1pdyy0g = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.0d98af52.js"),
+						import("./_app/immutable/entry/app.72765595.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 7],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

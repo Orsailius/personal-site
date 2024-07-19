@@ -4,6 +4,7 @@
     import { pokemonTypes } from '$lib/data/pokemonTypes';
     import {pokemonList} from '$lib/data/pokemonList';
     import { construct_svelte_component, each } from 'svelte/internal';
+    import Header from '../Header.svelte';
 
     let firstTypeIndex = 0;
     let secondTypeIndex = 0;
@@ -137,7 +138,7 @@
 	<title>Pokemon Type Hard Counter</title>
 	<meta name="description" content="Find Hard Counters for a type combo" />
 </svelte:head>
-
+<Header />
 <div class="bg-base-100">   
 	<h1 class="text-4xl pt-8 font-semibold text-center">Find A Hard Counter</h1>
 	<div class="grid m-4 ml-8 mr-8 grid-rows-3 grid-cols-1 md:grid-cols-3 md:grid-rows-1">

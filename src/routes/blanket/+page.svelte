@@ -2,8 +2,9 @@
     import TextEditor from './TextEditor.svelte';
     import TextData from '$lib/datatypes/TextData';   
     import { writable, type Writable } from "svelte/store";
-    import galleries from '$lib/datatypes/Gallery';
-    import { text } from 'svelte/internal';
+    import galleries, { type Gallery } from '$lib/datatypes/Gallery';
+    import EffectsEditor from './EffectsEditor.svelte';
+    import EffectsData, { buildEffectsFilter } from '$lib/datatypes/EffectsData';
 
     class PathInfo
     {
@@ -37,10 +38,28 @@
 
     let canvas:any;
     let textData:Writable<TextData> = writable(new TextData());
+    let effectsData:Writable<EffectsData> = writable(new EffectsData());
     let borderImage:string = "/images/aipaint/Eye0.png";
     let landscape = false;
-    let image:string = "/images/aipaint/Eye0.png";
+    let image:string = "/images/blanket/ComfyUI_01382_.png";
     let isFixed = true;
+
+    $: sortedGalleries = galleries.sort((a:Gallery,b:Gallery)=>
+    {
+        if(a.name == "Blanket")
+        {
+            if(b.name == "Blanket")
+            {
+                return 0;
+            }
+            return -1;
+        }
+        if(b.name == "Blanket")
+        {
+            return 1;
+        }
+        return 1;
+    })
 
     function setChosenImage(imageChosen:string)
     {
@@ -67,13 +86,11 @@
 
                 </div>  
             </div>
-            <button class="btn bg-slate-600" on:click={toggleFixed}>
-                
-            </button>            
         </div>   
         <div class="w-full lg:col-span-4 bg-slate-800 flex justify-center" style="z-index:100" class:fixed={isFixed}>
             <div class="relative m-2 outline outline-dotted outline-white" class:landscape={landscape} style="height:50vh;weight:25vh;">
-                <div class="main-image" style={"background-image: url(" + image +");"}>
+                <div class="main-image" style={"background-image: url(" + image +");"
+                     + buildEffectsFilter($effectsData)}>
 
                 </div>        
                 <div class="flex h-full  absolute top-0 left-0
@@ -102,19 +119,14 @@
                 
             </button>            
         </div>         
-        <div class="col-span-2 bg-slate-200 p-1">
-            <h1 class="text-4xl p-4 font-semibold text-center">Design a Blanket</h1> 
-            <div class="tabs tabs-lifted pt-1 md:pt-5">
+        <div class="relative col-span-2 bg-slate-800 p-1">
+            <!--<h1 class="absolute text-xl font-semibold text-right pr-5 top-1 right-0 text-white">Blanket Designer</h1> -->
+            <div class="tabs tabs-lifted">
                 <input type="radio" name="tabs" role="tab" class="tab bg-slate-300 text-lg font-semibold" aria-label="Image"/>
-                <div role="tabpanel" class="tab-content bg-blue-200  rounded-tr rounded-br rounded-bl">
-                    <div class="col-span-2 rounded-xl galleryList" style="background-color:#556677">
-                        <div class="w-full flex justify-center items-center" style="background-color:#33333333;min-height:5vh">
-                            <div class="text-center align-center end text-2xl font-semibold text-white" style="font-family:Bitter">
-                                Galleries
-                            </div>                             
-                        </div>
+                <div role="tabpanel" class="tab-content bg-slate-500  rounded-tr rounded-br rounded-bl">
+                    <div class="col-span-2 rounded-xl galleryList">                        
                         <div class=" flex flex-wrap gap-1 p-4 items-center place-content-around" style="min-height:70vh">
-                            {#each galleries as gallery}
+                            {#each sortedGalleries as gallery}
                                 {#each gallery.pieces as piece}
                                     <button class="flex flex-col justify-center items-center" on:click={()=>setChosenImage(piece.image)}>
                                         <img src={piece.image} alt={piece.name} class="rounded-xl" style="max-width:120px; width:100%"/>
@@ -132,9 +144,13 @@
                     <TextEditor textData={textData}/>
                 </div>
                 <input type="radio" name="tabs" role="tab" class="tab bg-slate-300 text-lg font-semibold" aria-label="Border"/>
-                <div role="tabpanel" class="tab-content bg-orange-200  rounded-tr rounded-br rounded-bl">
+                <div role="tabpanel" class="tab-content bg-orange-200 h-20 rounded-tr rounded-br rounded-bl">
 
                 </div>            
+                <input type="radio" name="tabs" role="tab" class="tab bg-slate-300 text-lg font-semibold" aria-label="Effects"/>
+                <div role="tabpanel" class="tab-content bg-blue-100 rounded-tr rounded-br rounded-bl">
+                    <EffectsEditor effectsData={effectsData}/>
+                </div>    
             </div>           
         </div>  
     </div>

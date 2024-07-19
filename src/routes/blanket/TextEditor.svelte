@@ -1,7 +1,9 @@
 <script lang="ts">
     import ColorInput from '$lib/components/ColorInput.svelte';
+    import SemiboldLabel from '$lib/components/SemiboldLabel.svelte';
     import type TextData from "$lib/datatypes/TextData";
     import type { Writable } from 'svelte/store';
+    import Color, { getActiveToggleColor } from "$lib/Color";
 
     export let textData:Writable<TextData>;
         
@@ -50,38 +52,24 @@
     ]	
 </script>
 
-<div class="flex flex-wrap m-4 gap-1">
-    <div class="flex items-center">
-        <label class="form-control w-full max-w-xs">
-            <div class="label">
-                <span class="label-text">Title Text</span>
-            </div>
-            <input type="text" bind:value={$textData.titleText} placeholder="Type here" class="input input-bordered w-full max-w-xs" />
-        </label>
-    </div>
-    <!--<div class="flex items-center">
-        svelte-ignore a11y-label-has-associated-control
-        <label class="form-control w-full max-w-xs">
-            <div class="label">
-                <span class="label-text">Background Colour</span>
-            </div>          
-            <ColorInput bind:color={$textData.backgroundColor} onSelect={(c)=>{}}/>
-        </label>
-    </div>-->
-    <div class="flex items-center">
+<div class="flex flex-wrap m-4 gap-2">
+    <label class="form-control max-w-xs">
+        <SemiboldLabel name={"Title Text"} />     
+        <input type="text" 
+            bind:value={$textData.titleText}   
+            placeholder="Type here"       
+            class="input input-bordered w-full max-w-xs text-lg font-medium" />
+    </label>
+    <div class="form-control flex items-center">
         <!-- svelte-ignore a11y-label-has-associated-control -->
         <label class="form-control w-full max-w-xs">
-            <div class="label">
-                <span class="label-text">Font Colour</span>
-            </div>          
+            <SemiboldLabel name={"Font Colour"} />      
             <ColorInput bind:color={$textData.fontColor} onSelect={(c)=>{}}/>
         </label>
     </div>
-    <div class="flex items-center">
+    <div class="form-control flex items-center">
         <label class="form-control w-full max-w-xs">
-            <div class="label">
-                <span class="label-text">Font Size</span>
-            </div>
+            <SemiboldLabel name={"Font Size"} />
             <div class="join">
                 <input type="number" bind:value={$textData.fontSize} placeholder="Type here" class="input input-bordered w-full max-w-xs join-item" />
                 <select bind:value={$textData.fontSizeType} class="select select-bordered w-full max-w-xs join-item">
@@ -93,10 +81,10 @@
             </div>                
         </label>
     </div>
-    <div class="flex items-center">
+    <div class="form-control flex items-center">
         <label class="form-control w-full max-w-xs">
             <div class="label">
-                <span class="label-text">Font</span>
+                <span class="label-text font-semibold text-lg" style="line-height:1rem">Font</span>
             </div>
             <input list="fonts" class="input input-bordered w-full max-w-xs" bind:value={$textData.font} />
             <datalist id="fonts">
@@ -106,19 +94,15 @@
             </datalist> 
         </label>
     </div>
-    <div class="flex items-center">
+    <label class="form-control w-full max-w-xs pb-4">
+        <SemiboldLabel name={"Boldness"} />
+        <input type="number" 
+            bind:value={$textData.fontWeight}          
+            class="input input-bordered w-full max-w-xs text-lg font-medium" />
+    </label>
+    <div class="form-control flex items-center">
         <label class="form-control w-full max-w-xs">
-            <div class="label">
-                <span class="label-text">Font Weight</span>
-            </div>
-            <input type="number" bind:value={$textData.fontWeight} class="input input-bordered w-full max-w-xs" />
-        </label>
-    </div>
-    <div class="flex items-center">
-        <label class="form-control w-full max-w-xs">
-            <div class="label">
-                <span class="label-text">Rotate</span>
-            </div>
+            <SemiboldLabel name={"Rotate"} />     
             <div class="join">
                 <input type="number" bind:value={$textData.rotation} class="input input-bordered w-full max-w-xs join-item" />
                 <select bind:value={$textData.rotationType} class="select select-bordered w-full max-w-xs join-item">
@@ -130,53 +114,49 @@
             </div>                
         </label>
     </div>
-    <div class="flex items-center">
-        <label class="form-control w-full max-w-xs">
-            <div class="label">
-                <span class="label-text">Horizontal Offset</span>
-            </div>
-            <div class="join">
-                <input type="number" bind:value={$textData.positionX} placeholder="Type here" class="input input-bordered w-full max-w-xs join-item" />
-                <select bind:value={$textData.positionXType} class="select select-bordered w-full max-w-xs join-item">
-                    <option value="px">px</option>
-                    <option value="em">em</option>
-                    <option value="%" selected>%</option>
-                    <option value="vw">vw</option>
-                    </select>
-            </div>                
-        </label>
-        <label class="form-control w-full max-w-xs">
-            <div class="label">
-                <span class="label-text">Vertical Offset</span>
-            </div>
-            <div class="join">
-                <input type="number" bind:value={$textData.positionY} placeholder="Type here" class="input input-bordered w-full max-w-xs join-item" />
-                <select bind:value={$textData.positionYType} class="select select-bordered w-full max-w-xs join-item">
-                    <option value="px" >px</option>
-                    <option value="em">em</option>
-                    <option value="%" selected>%</option>
-                    <option value="vw">vw</option>
-                    </select>
-            </div>                
+    <label class="form-control w-full max-w-xs">
+        <SemiboldLabel name={"Horizontal Offset"} />     
+        <div class="join">
+            <input type="number" bind:value={$textData.positionX} placeholder="Type here" class="input input-bordered w-full max-w-xs join-item" />
+            <select bind:value={$textData.positionXType} class="select select-bordered w-full max-w-xs join-item">
+                <option value="px">px</option>
+                <option value="em">em</option>
+                <option value="%" selected>%</option>
+                <option value="vw">vw</option>
+                </select>
+        </div>                
+    </label>
+    <label class="form-control w-full max-w-xs">
+        <SemiboldLabel name={"Vertical Offset"} />
+        <div class="join">
+            <input type="number" bind:value={$textData.positionY} placeholder="Type here" class="input input-bordered w-full max-w-xs join-item" />
+            <select bind:value={$textData.positionYType} class="select select-bordered w-full max-w-xs join-item">
+                <option value="px" >px</option>
+                <option value="em">em</option>
+                <option value="%" selected>%</option>
+                <option value="vw">vw</option>
+                </select>
+        </div>                
+    </label>
+    <div class="form-control p-2 items-center flex justify-center">
+        <label class="label cursor-pointer">
+            <span class={"label-text text-lg font-semibold pr-3 " + getActiveToggleColor($textData.isItalics)}>
+                Italics
+            </span> 
+            <input type="checkbox" class="toggle" bind:checked={$textData.isItalics} />
         </label>
     </div>
-    <div class="grid grid-cols-2 items-center">
-        <div class="text-center p-2">
-            Italics?
-        </div>
-        <input type="checkbox" bind:checked={$textData.isItalics} class="checkbox checkbox-primary" />
-    </div>    
-    <div class="grid grid-cols-2 items-center">
-        <div class="text-center p-2">
-            Flip?
-        </div>
-        <input type="checkbox" bind:checked={$textData.isFlipped} class="checkbox checkbox-primary" />
-    </div> 
-    <div class="flex items-center col-span-2 md:col-span-1">
+    <div class="form-control p-2">
+        <label class="label cursor-pointer">
+            <span class={"label-text text-lg font-semibold pr-3 " + getActiveToggleColor($textData.isFlipped)}>
+                Flipped
+            </span> 
+            <input type="checkbox" class="toggle" bind:checked={$textData.isFlipped} />
+        </label>
+    </div>
+    <div class="form-control flex items-center col-span-2 md:col-span-1">
         <label class="form-control w-full max-w-xs">
-            <div class="label">
-                <span class="label-text">Outline</span>
-            </div>
+            <SemiboldLabel name={"Outline"} />
             <div class="join">
                 <input type="number" bind:value={$textData.outlineWidth} class="input input-bordered w-full max-w-xs join-item" />  
                 <div class="join-item">
@@ -189,11 +169,9 @@
             </div>            
         </label>
     </div>
-    <div class="flex items-center col-span-2 lg:col-span-1">
+    <div class="form-control flex items-center col-span-2 lg:col-span-1">
         <label class="form-control w-full max-w-xs">
-            <div class="label">
-                <span class="label-text">Path</span>
-            </div>
+            <SemiboldLabel name={"Path"} />
             <div class="join">                    
                 <select  class="select select-bordered w-full max-w-xs join-item" bind:value={$textData.pathId}>
                     {#each paths as path, index}

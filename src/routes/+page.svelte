@@ -16,11 +16,12 @@
 	<div class="bg-base-100">
 		<section class="hero min-h-screen">
 			<div class="hero-content text-center">
-			<div class="max-w-md">
-				<h1 class="text-5xl font-bold">Coming Soon</h1>
-				<p class="py-6">Stay tuned for the website, you can check out some other content in the tabs at the top of the screen</p>
-				<p class="py-6">Thanks, Justin</p>
-			</div>
+				<div class="max-w-md">
+					<h1 class="text-5xl font-bold">Coming Soon</h1>
+					<p class="py-6">Stay tuned for the website, you can check out some other content in the tabs at the top of the screen</p>
+					<p class="py-6">Thanks, Justin</p>
+					<a href="/blanket"> Blanket Designer </a>
+				</div>
 			</div>  
 		</section>
 		<!--<section>

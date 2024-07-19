@@ -16,7 +16,7 @@
 
 <div class="app">
 	{#if !path.endsWith("cardgame") && !path.endsWith("blanket")}
-		<Header />
+		
 	{/if}
 
 	<main class="relative">

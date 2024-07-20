@@ -30,7 +30,7 @@
         Any:200
     }
 
-    let checkUnlocks = false;
+    let checkUnlocks = true;
 
 </script>
 

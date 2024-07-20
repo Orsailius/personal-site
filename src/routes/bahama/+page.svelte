@@ -30,7 +30,7 @@
         Any:200
     }
 
-    let checkUnlocks = true;
+    let checkUnlocks = false;
 
 </script>
 
@@ -78,7 +78,7 @@
 
 .bahama-background
 {
-    background-image: url('images/pkmn/BackgroundRepeat.png');
+    background-image: url('/images/pkmn/BackgroundRepeat.png');
 }
 
 .bahama-map

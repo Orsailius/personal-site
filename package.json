@@ -7,7 +7,8 @@
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"gh-pages": "npm run build && npx gh-pages -d build",
+		"copy-cname": "powershell Copy-Item CNAME -Destination build/CNAME",
+		"gh-pages": "npm run build && npm run copy-cname && node gh-pages.js",
 		"deploy": "node ./gh-pages.js"
 	},
 	"devDependencies": {

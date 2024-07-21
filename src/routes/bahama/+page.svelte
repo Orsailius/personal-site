@@ -4,6 +4,8 @@
     import {pokemonList, unlockedList} from '$lib/data/birthdayPokemonList';
     import RegionHover from './RegionHover.svelte';
     import regions from '$lib/datatypes/PokemonRegion';
+    import RaceTracker from '$lib/components/RaceTracker.svelte';
+    import WhosThatPokemon from './WhosThatPokemon.svelte';
 
     let typeIndex = 200;
 
@@ -39,7 +41,7 @@
 	<meta name="description" content="Birthday Game!" />
 </svelte:head>
 
-<div class="bg-base-100 bahama-background">   
+<div class="bg-base-100 bahama-background">       
     <div class="flex flex-col items-center pt-2">
         <img src="/images/pkmn/Pokemon.png" />
         <img src="/images/pkmn/BahamaBirthday.png" />
@@ -71,6 +73,25 @@
             {/each}
         </div>   	
     </div>   
+    <div class="m-2">
+        <div class="collapse collapse-arrow outline outline-2">
+            <input type="checkbox" />
+            <div class="collapse-title text-3xl text-center font-semibold"> Race Tracker</div>
+            <div class="collapse-content">
+                <RaceTracker />
+            </div>
+        </div>
+    </div>  
+    <div class="outline outline-1 m-2 mt-4 rounded-xl text-center p-4">
+        Pokemon Bahama Birthday
+        <!--<WhosThatPokemon pokemonName={"Klankir"}
+            images ={
+            [
+                "/images/pkmn/Klanker1.jfif",
+                "/images/pkmn/Klanker2.jfif",
+                "/images/pkmn/Klanker3.jfif" 
+            ]} />-->
+    </div>
 </div>
 
 <style>

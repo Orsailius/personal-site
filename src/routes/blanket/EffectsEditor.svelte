@@ -49,7 +49,7 @@
                     <option value="px" selected>px</option>
                     <option value="em">em</option>
                     <option value="vw">vw</option>
-                    </select>
+                </select>
             </div>                
         </label>
     </div>  

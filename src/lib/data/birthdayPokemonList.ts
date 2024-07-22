@@ -227,7 +227,8 @@ export var pokemonList =
       StatTotal: "530",
       SMove1: "",
       SMove2: "",
-      OtheMovesEg: ""
+      OtheMovesEg: "",
+      Image:"/images/pkmn/Timach2.jfif"
     },
     {
       Desc: "",
@@ -1944,4 +1945,6 @@ export var unlockedList=
   findByName("Diablous"),
   findByName("Timach"),
   findByName("Klankir"),
+  findByName("Glacerror"),
+  findByName("Merci"),
 ]

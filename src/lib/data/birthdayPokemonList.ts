@@ -956,7 +956,8 @@ export var pokemonList =
       StatTotal: "580",
       SMove1: "",
       SMove2: "",
-      OtheMovesEg: ""
+      OtheMovesEg: "",
+      Image:"/images/pkmn/Klanker3.jfif"
     },
     {
       Desc: "",

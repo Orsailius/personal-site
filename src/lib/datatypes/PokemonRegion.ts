@@ -133,6 +133,25 @@ let regions:PokemonRegion[] = [
         height:8,
         name:"Water Temple",
         description:"No one has ever said anything bad about this place",
+        catches:
+        [
+            {
+                pkmn:"Wreepur",
+                rate:"??%"
+            },   
+            {
+                pkmn:"Klankir",
+                rate:"??%"
+            },   
+            {
+                pkmn:"Hydractic",
+                rate:"??%"
+            },   
+            {
+                pkmn:"Mario",
+                rate:"??%"
+            },            
+        ]
     }, 
     {
         x:43,

@@ -663,7 +663,8 @@ export var pokemonList =
       StatTotal: "530",
       SMove1: "",
       SMove2: "",
-      OtheMovesEg: ""
+      OtheMovesEg: "",
+      Image:"/images/pkmn/Glacerror3.jfif"
     },
     {
       Desc: "",
@@ -1953,4 +1954,9 @@ export var unlockedList=
   findByName("Manbat"),
   findByName("Gleetcher"),
   findByName("Krasher"),
+  findByName("Hydractic"),
+  findByName("Khantractor"),
+  findByName("Baypig"),
+  findByName("Watersow"),
+  findByName("Tidehog"),
 ]

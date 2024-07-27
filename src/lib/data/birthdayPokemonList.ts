@@ -245,7 +245,8 @@ export var pokemonList =
       StatTotal: "530",
       SMove1: "",
       SMove2: "",
-      OtheMovesEg: ""
+      OtheMovesEg: "",
+      Image:"/images/pkmn/Kylead.jfif"
     },
     {
       Desc: "",
@@ -1959,4 +1960,5 @@ export var unlockedList=
   findByName("Baypig"),
   findByName("Watersow"),
   findByName("Tidehog"),
+  findByName("Daybur"),
 ]

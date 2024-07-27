@@ -84,12 +84,12 @@
     </div>  
     <div class="outline outline-1 m-2 mt-4 rounded-xl text-center p-4">
         Pokemon Bahama Birthday
-        <!--<WhosThatPokemon pokemonName={"Wreepur"}
+        <!--<WhosThatPokemon pokemonName={"Trapclap"}
             images ={
             [
-                "/images/pkmn/Wreeper1.jfif",
-                "/images/pkmn/Wreeper2.jfif",
-                "/images/pkmn/Wreeper3.jfif",
+                "/images/pkmn/Trapclap2.jfif",
+                "/images/pkmn/Trapclap3.jfif",
+                "/images/pkmn/Trapclap5.jfif",
             ]} />-->
     </div>
 </div>

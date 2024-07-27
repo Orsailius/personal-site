@@ -176,7 +176,8 @@ export var pokemonList =
       StatTotal: "382",
       SMove1: "",
       SMove2: "",
-      OtheMovesEg: ""
+      OtheMovesEg: "",
+      Image:"/images/pkmn/Gleetcher2.jfif"
     },
     {
       Desc: "|",
@@ -193,7 +194,8 @@ export var pokemonList =
       StatTotal: "530",
       SMove1: "",
       SMove2: "",
-      OtheMovesEg: ""
+      OtheMovesEg: "",
+      Image:"/images/pkmn/Krasher3.jfif"
     },
     {
       Desc: "Murderous Lime Pokemon",
@@ -1045,7 +1047,9 @@ export var pokemonList =
       StatTotal: "1530",
       SMove1: "",
       SMove2: "",
-      OtheMovesEg: "Flying, Fighting, Ground, Electric"
+      OtheMovesEg: "Flying, Fighting, Ground, Electric",
+      Image:"/images/pkmn/Daybur2.jfif"
+
     },
     {
       Desc: "Starters",

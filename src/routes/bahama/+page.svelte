@@ -6,6 +6,7 @@
     import regions from '$lib/datatypes/PokemonRegion';
     import RaceTracker from '$lib/components/RaceTracker.svelte';
     import WhosThatPokemon from './WhosThatPokemon.svelte';
+    import TeamBuilder from '$lib/components/TeamBuilder.svelte';
 
     let typeIndex = 200;
 
@@ -82,6 +83,7 @@
             </div>
         </div>
     </div>  
+    <!-- <TeamBuilder /> -->
     <div class="outline outline-1 m-2 mt-4 rounded-xl text-center p-4">
         Pokemon Bahama Birthday
         <!--<WhosThatPokemon pokemonName={"Trapclap"}

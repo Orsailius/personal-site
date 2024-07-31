@@ -1416,7 +1416,8 @@ export var pokemonList =
       LEVEL_UP_MOVE(21, MOVE_HEAT_WAVE),
       LEVEL_UP_MOVE(25, MOVE_SURF),
       LEVEL_UP_MOVE(29, MOVE_OVERHEAT),
-      LEVEL_UP_MOVE(33, MOVE_STEAM_ERUPTION),  ]
+      LEVEL_UP_MOVE(33, MOVE_STEAM_ERUPTION),  ],
+      Image:"/images/pkmn/Coffee2.jfif"
     },
     {
       Desc: "",
@@ -2523,7 +2524,8 @@ export var pokemonList =
       LEVEL_UP_MOVE(21, MOVE_VOLT_SWITCH),
       LEVEL_UP_MOVE(25, MOVE_ROCK_WRECKER),
       LEVEL_UP_MOVE(29, MOVE_LAST_RESORT),
-      LEVEL_UP_MOVE(33, MOVE_WILD_CHARGE), ]
+      LEVEL_UP_MOVE(33, MOVE_WILD_CHARGE), ],
+      Image:"/images/pkmn/Khantractor2.jfif"
     },
     {
       Desc: "",
@@ -4577,4 +4579,6 @@ export var unlockedList=
   findByName("Daybur"),
   findByName("Coffish"),
   findByName("Paladin Guy"),
+  findByName("Careagain"),
+  findByName("Saurus"),
 ]

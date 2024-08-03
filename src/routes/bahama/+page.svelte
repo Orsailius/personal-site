@@ -7,6 +7,7 @@
     import RaceTracker from '$lib/components/RaceTracker.svelte';
     import WhosThatPokemon from './WhosThatPokemon.svelte';
     import TeamBuilder from '$lib/components/TeamBuilder.svelte';
+    import TypeList from './TypeList.svelte';
 
     let typeIndex = 200;
 
@@ -86,13 +87,16 @@
     <!-- <TeamBuilder /> -->
     <div class="outline outline-1 m-2 mt-4 rounded-xl text-center p-4">
         Pokemon Bahama Birthday
-        <!--<WhosThatPokemon pokemonName={"Trapclap"}
+        <!--<WhosThatPokemon pokemonName={"Juvi Justin"}
             images ={
             [
-                "/images/pkmn/Trapclap2.jfif",
-                "/images/pkmn/Trapclap3.jfif",
-                "/images/pkmn/Trapclap5.jfif",
+                "/images/pkmn/JuviJustin1.jfif",
+                "/images/pkmn/JuviJustin2.jfif",
+                "/images/pkmn/JuviJustin3.jfif",
             ]} />-->
+        <!--<TypeList types={[
+            "normal"
+        ]}/>-->
     </div>
 </div>
 

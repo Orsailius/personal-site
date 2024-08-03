@@ -4,6 +4,8 @@
 	import { programmingLanguages, tools } from '$lib/SkillData';
 	import { projects } from '$lib/datatypes/ProjectInfo';
     import ProjectCard from '$lib/components/ProjectCard.svelte';
+    import { routeList } from '$lib/datatypes/RouteCardData';
+    import RouteCard from '$lib/components/RouteCard.svelte';
 </script>
 
 <svelte:head>
@@ -13,7 +15,7 @@
 
 <!-- svelte-ignore empty-block -->
 {#if true}
-	<div class="bg-base-100">
+	<div class="">
 		<section class="hero min-h-screen">
 			<div class="hero-content text-center">
 				<div class="max-w-md">
@@ -24,6 +26,11 @@
 				</div>
 			</div>  
 		</section>
+		<div class="flex flex-wrap items-center justify-around gap-4 m-4">
+			{#each routeList as route}
+				<RouteCard routeCardData={route} />
+			{/each}
+		</div>
 		<!--<section>
 			<h1 class="text-4xl pb-8 font-bold"> Projects </h1>
 			<div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
@@ -34,8 +41,7 @@
 				{/each}
 			</div>		
 		</section>-->
-	</div>
-	
+	</div>	
 {:else}
 	<section class="bg-slate-100 m:p-[16vw] p-[12vw]">	
 		<div class="grid grid-cols-2">

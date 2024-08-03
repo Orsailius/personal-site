@@ -1,42 +1,13 @@
 <script lang="ts">
+  import DesignedText from './DesignedText.svelte';
+
     import TextEditor from './TextEditor.svelte';
     import TextData from '$lib/datatypes/TextData';   
     import { writable, type Writable } from "svelte/store";
     import galleries, { type Gallery } from '$lib/datatypes/Gallery';
     import EffectsEditor from './EffectsEditor.svelte';
     import EffectsData, { buildEffectsFilter } from '$lib/datatypes/EffectsData';
-
-    class PathInfo
-    {
-        name:string
-        builder:(curviness:number, pathScale:number)=>string
-
-        constructor(name:string, builder:(curviness:number, pathScale:number)=>string) 
-        {
-            this.name = name;
-            this.builder = builder;
-        }       
-        
-    }
-
-    const paths = [
-        new PathInfo("Straight", (c,p)=>"M-1900,0 L1900,0"),
-        new PathInfo("Hill", (c,p)=>
-        {
-            let scalePoint = 100 * p;
-            let nearScale = scalePoint * 0.95;
-            return "M-1900,0 L-" + scalePoint + ",0 C-" + nearScale + "," + -c*50 + " " + nearScale + "," + -c*50 + " " + scalePoint + ",0 L" + scalePoint + ",0 1900,0"
-        }),
-        new PathInfo("Wave", (c,p)=>
-        {
-            let scalePoint = 100 * p;
-            let halfScale = scalePoint/2;
-            return "M-1900,0 L-" + scalePoint + ",0 Q-" + halfScale + "," + -c*50 + 
-                                " 0,0 Q" + halfScale + "," + c*50 + " " + scalePoint + ",0 L" + scalePoint + ",0 1900,0"
-        })
-    ]
-
-    let canvas:any;
+    
     let textData:Writable<TextData> = writable(new TextData());
     let effectsData:Writable<EffectsData> = writable(new EffectsData());
     let borderImage:string = "/images/aipaint/Eye0.png";
@@ -81,43 +52,36 @@
 <div class="w-full">    
     <div class="flex flex-col lg:grid lg:grid-cols-6">   
         <div class="w-full lg:col-span-4 bg-slate-800 flex justify-center" style="z-index:100" class:hidden={!isFixed}>
-            <div class="relative m-2 outline outline-dotted outline-white" class:landscape={landscape} style="height:50vh;weight:25vh;">
+            <div class="relative m-2 outline outline-dotted outline-white" class:landscape={landscape} style="height:50vh;width:33vh;">
                 <div class="main-image" style={"background-image: url(" + image +");"}>
 
                 </div>  
             </div>
         </div>   
         <div class="w-full lg:col-span-4 bg-slate-800 flex justify-center" style="z-index:100" class:fixed={isFixed}>
-            <div class="relative m-2 outline outline-dotted outline-white" class:landscape={landscape} style="height:50vh;weight:25vh;">
-                <div class="main-image" style={"background-image: url(" + image +");"
-                     + buildEffectsFilter($effectsData)}>
-
-                </div>        
-                <div class="flex h-full  absolute top-0 left-0
-                    relative items-center justify-center" 
-                    style={"transform: translate(" + $textData.positionX + "" + $textData.positionXType+ ",-" + $textData.positionY + "" + $textData.positionYType + ")"}>	
-                    <svg viewBox="-960 -540 1920 1080" class="w-full" style="max-height:300px;">
-                        {#if $textData.showCurve}
-                            <path id="curve" d={paths[$textData.pathId].builder($textData.curviness, $textData.pathScale)}/>
-                        {:else}
-                            <path id="curve" d={paths[$textData.pathId].builder($textData.curviness, $textData.pathScale)} fill="transparent"/>
-                        {/if}
-                        <text x="25"  style={"text-anchor:middle; fill:"+$textData.fontColor +"; font-size:" + (4.16 * $textData.fontSize) + $textData.fontSizeType + ";font-family:" + $textData.font + ";" + "font-weight: " + $textData.fontWeight +
-                        ";transform: rotate(" + $textData.rotation + $textData.rotationType + ") " + ($textData.isFlipped ? " scale(-1,1)" : "") + ";"} 
-                        class={($textData.isItalics ? "italic" : "")} paint-order="stroke" stroke={$textData.outlineColor} stroke-width={$textData.outlineWidth}>
-                        <textPath xlink:href="#curve" startOffset="50%" alignment-baseline="central">
-                            {$textData.titleText}
-                        </textPath>
-                        </text>
-                    </svg>
-                </div>
+            <div class="relative m-2 outline outline-dotted outline-white" class:landscape={landscape} style="height:50vh;width:33vh;">
+                <div class="main-image h-full" style={"background-image: url(" + image +");"
+                     + buildEffectsFilter($effectsData)}>                     
+                    <DesignedText textData={textData}/>
+                </div> 
                 <!--<div class="border-image" style={"background-image: url(\"" + borderImage + "\");"}>
     
                 </div>-->
             </div>
-            <button class="btn bg-slate-600" on:click={toggleFixed}>
+            <div class="flex flex-col">
+                <button class="btn bg-slate-600" on:click={toggleFixed}>
                 
-            </button>            
+                </button> 
+                <button class="btn bg-slate-600" on:click={toggleFixed}>
+                
+                </button>
+                <button class="btn bg-slate-600" on:click={toggleFixed}>
+                
+                </button>   
+                <button class="btn bg-slate-600" on:click={toggleFixed}>
+                
+                </button>                    
+            </div>                 
         </div>         
         <div class="relative col-span-2 bg-slate-800 p-1">
             <!--<h1 class="absolute text-xl font-semibold text-right pr-5 top-1 right-0 text-white">Blanket Designer</h1> -->

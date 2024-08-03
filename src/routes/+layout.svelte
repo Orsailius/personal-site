@@ -19,7 +19,7 @@
 		
 	{/if}
 
-	<main class="relative">
+	<main class="relative bg-white">
 		<slot />
 	</main>
 

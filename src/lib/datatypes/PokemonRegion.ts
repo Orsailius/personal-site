@@ -33,11 +33,11 @@ let regions:PokemonRegion[] = [
             },           
             {
                 pkmn:"Smogun",
-                rate:"9%"
+                rate:"5%"
             },
             {
                 pkmn:"Trapclap",
-                rate:"1%"
+                rate:"5%"
             },
         ]
     },
@@ -99,11 +99,11 @@ let regions:PokemonRegion[] = [
             },           
             {
                 pkmn:"Diablous",
-                rate:"9%"
+                rate:"5%"
             },
             {
                 pkmn:"Admiral Eagle",
-                rate:"1%"
+                rate:"5%"
             },
         ]
     }, 
@@ -145,19 +145,19 @@ let regions:PokemonRegion[] = [
         [
             {
                 pkmn:"Wreepur",
-                rate:"??%"
+                rate:"30%"
             },   
             {
                 pkmn:"Klankir",
-                rate:"??%"
+                rate:"30%"
             },   
             {
                 pkmn:"Hydractic",
-                rate:"??%"
+                rate:"30%"
             },   
             {
                 pkmn:"Mario",
-                rate:"??%"
+                rate:"10%"
             },            
         ]
     }, 
@@ -286,11 +286,11 @@ let regions:PokemonRegion[] = [
             },   
             {
                 pkmn:"Wingull",
-                rate:"49%"
+                rate:"45%"
             },  
             {
                 pkmn:"Merci",
-                rate:"1%"
+                rate:"5%"
             },       
         ]
     }, 
@@ -305,7 +305,7 @@ let regions:PokemonRegion[] = [
         [
             {
                 pkmn:"Gleetcher",
-                rate:"50%"
+                rate:"45%"
             },   
             {
                 pkmn:"Spinarak",
@@ -313,7 +313,7 @@ let regions:PokemonRegion[] = [
             },    
             {
                 pkmn:"Sawnick",
-                rate:"1%"
+                rate:"5%"
             },       
         ]
     }, 
@@ -328,7 +328,7 @@ let regions:PokemonRegion[] = [
         [
             {
                 pkmn:"Limurder",
-                rate:"50%"
+                rate:"45%"
             },   
             {
                 pkmn:"Budew",
@@ -336,7 +336,7 @@ let regions:PokemonRegion[] = [
             },        
             {
                 pkmn:"Careagain",
-                rate:"1%"
+                rate:"5%"
             },    
         ]
     }, 
@@ -359,11 +359,11 @@ let regions:PokemonRegion[] = [
             },    
             {
                 pkmn:"Neoone",
-                rate:"9%"
+                rate:"5%"
             },   
             {
                 pkmn:"Miths",
-                rate:"1%"
+                rate:"5%"
             },        
         ]
     }, 
@@ -390,11 +390,11 @@ let regions:PokemonRegion[] = [
             },   
             {
                 pkmn:"Paladin Guy",
-                rate:"9%"
+                rate:"5%"
             },    
             {
                 pkmn:"Mephis",
-                rate:"1%"
+                rate:"5%"
             },       
         ]
     }, 
@@ -436,7 +436,7 @@ let regions:PokemonRegion[] = [
             },   
             {
                 pkmn:"Qhygone",
-                rate:"40%"
+                rate:"35%"
             },    
             {
                 pkmn:"Hartus",
@@ -444,11 +444,11 @@ let regions:PokemonRegion[] = [
             },    
             {
                 pkmn:"Saurus",
-                rate:"4%"
+                rate:"5%"
             },       
             {
                 pkmn:"Manbat",
-                rate:"1%"
+                rate:"5%"
             },   
         ]
     }, 

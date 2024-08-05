@@ -84,7 +84,7 @@
             </div>
         </div>
     </div>  
-    <!-- <TeamBuilder /> -->
+    <!--<TeamBuilder />-->
     <div class="outline outline-1 m-2 mt-4 rounded-xl text-center p-4">
         Pokemon Bahama Birthday
         <!--<WhosThatPokemon pokemonName={"Juvi Justin"}

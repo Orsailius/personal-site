@@ -51,6 +51,7 @@
 		"markdown-it-emoji": "^3.0.0",
 		"markdown-it-footnote": "^4.0.0",
 		"music-beat-detector": "^0.1.1",
+		"ohm-js": "^17.1.0",
 		"phaser": "^3.70.0",
 		"postcss": "^8.4.23",
 		"reveal.js": "^5.0.4",

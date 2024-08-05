@@ -29,3 +29,89 @@ const paths = [
 ]
 
 export default paths;
+
+/*
+DataPipe {
+
+  Exp
+    = Stuff*
+    
+  Stuff
+   = Pipe
+    | Format
+
+  Pipe
+    = ident "->" Code PipeOutput --selfpipe
+    | ident "->" "{" Code* "}" PipeOutput --mappingpipe
+   
+  PipeOutput
+  = "->" ident
+  
+  Code
+  = string+
+  
+  Format
+  	= "format" ident "{" FormatSpec+ "}"
+
+  FormatSpec
+  = FormatLine+
+  
+  FormatLine
+  = string
+  | Capture
+  
+  Capture
+  = "<" ident ">"  
+
+  ident  (an identifier)
+    = letter alnum*
+    
+  string
+  	= letter+
+    | "."
+
+  number  (a number)
+    = digit* "." digit+  -- fract
+    | digit+             -- whole
+}
+*/
+
+/*
+CardCreator {
+
+  Exp
+    = Stuff*
+    
+  Stuff
+   = Content Class? Style?
+   | Content Style? Class?
+
+  Class
+    = "[" (~"]" any )* "]"
+    
+    Style
+    = "{" (~"}" any )* "}"
+    
+   Content
+   = "\"" string "\"" --text
+   | "image" "(" (~")" any )* ")" --image
+   | "link"  "(" (~")" any )* ")"  "\"" string "\"" --link
+   | "button"  "(" (~")" any )* ")"  "\"" string "\"" --button
+   | "html" "("(~")" any )* ")" --html
+   | "group" ident --group
+   | "all" --all
+
+  Capture
+  = "<" ident ">"  
+
+  ident  (an identifier)
+    = letter alnum*
+    
+  string
+  	= (~"\"" any )+
+
+  number  (a number)
+    = digit* "." digit+  -- fract
+    | digit+             -- whole
+}
+*/

@@ -461,7 +461,9 @@ export var pokemonList =
       MOVE_SNATCH      ,                                 //
       MOVE_OVERHEAT    ,                                 //
       MOVE_CUT       ,                                   //
-      MOVE_FLASH        , LEVEL_UP_MOVE( 1, MOVE_INFESTATION),
+      MOVE_FLASH        ,
+      MOVE_FLY        ,                                  //
+       LEVEL_UP_MOVE( 1, MOVE_INFESTATION),
       LEVEL_UP_MOVE( 6, MOVE_THUNDER_WAVE),
       LEVEL_UP_MOVE( 10, MOVE_STRUGGLE_BUG),
       LEVEL_UP_MOVE(14, MOVE_FAKE_OUT),
@@ -503,7 +505,9 @@ export var pokemonList =
       MOVE_SNATCH      ,                                 //
       MOVE_OVERHEAT    ,                                 //
       MOVE_CUT       ,                                   //
-      MOVE_FLASH        , LEVEL_UP_MOVE( 1, MOVE_INFESTATION),
+      MOVE_FLASH        ,
+      MOVE_FLY        ,   
+       LEVEL_UP_MOVE( 1, MOVE_INFESTATION),
       LEVEL_UP_MOVE( 6, MOVE_THUNDER_WAVE),
       LEVEL_UP_MOVE( 10, MOVE_STRUGGLE_BUG),
       LEVEL_UP_MOVE(14, MOVE_FAKE_OUT),
@@ -4590,4 +4594,7 @@ export var unlockedList=
   findByName("Tot Henry"),
   findByName("Wee Huy"),
   findByName("Juvi Justin"),
+  findByName("Sawnick"),
+  findByName("Kevlair"),
+  findByName("Bulletin"),
 ]

@@ -2673,7 +2673,8 @@ export var pokemonList =
       LEVEL_UP_MOVE(36, MOVE_MIGHTY_CLEAVE),
       LEVEL_UP_MOVE(39, MOVE_LUNGE),
       LEVEL_UP_MOVE(42, MOVE_RECOVER),
-      LEVEL_UP_MOVE(45, MOVE_EXTREME_SPEED),  ]                                //]
+      LEVEL_UP_MOVE(45, MOVE_EXTREME_SPEED),  ],                                
+      Image:"/images/pkmn/LittleKen1.jfif"
     },
     {
       Desc: "",
@@ -2723,7 +2724,8 @@ export var pokemonList =
       LEVEL_UP_MOVE(36, MOVE_METEOR_MASH),
       LEVEL_UP_MOVE(39, MOVE_SKY_ATTACK),
       LEVEL_UP_MOVE(42, MOVE_RECOVER),
-      LEVEL_UP_MOVE(45, MOVE_EXTREME_SPEED),]
+      LEVEL_UP_MOVE(45, MOVE_EXTREME_SPEED),],                                
+      Image:"/images/pkmn/Minialex3.jfif"
     },
     {
       Desc: "",
@@ -2855,7 +2857,8 @@ export var pokemonList =
       LEVEL_UP_MOVE(36, MOVE_SHADOW_BALL),
       LEVEL_UP_MOVE(39, MOVE_ICE_BEAM),
       LEVEL_UP_MOVE(42, MOVE_RECOVER),
-      LEVEL_UP_MOVE(45, MOVE_EXTREME_SPEED), ]
+      LEVEL_UP_MOVE(45, MOVE_EXTREME_SPEED), ],                                
+      Image:"/images/pkmn/JuviJustin2.jfif"
     },
     {
       Desc: "",
@@ -4597,4 +4600,9 @@ export var unlockedList=
   findByName("Sawnick"),
   findByName("Kevlair"),
   findByName("Bulletin"),
+  findByName("Mephis"),
+  findByName("Hartus"),
+  findByName("Qhygone"),
+  findByName("Bonja"),
+  findByName("Pinkee"),
 ]

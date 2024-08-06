@@ -117,4 +117,11 @@ export const routeList:RouteCardData[] = [
         category: RouteCategory.Media,
         icon:"Projector"
     },
+    {
+        name: "Html Card Maker",
+        route: "cardmaker",
+        description: "Add content to an html card",
+        category: RouteCategory.Tool,
+        icon:"Projector"
+    },
 ];

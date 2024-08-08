@@ -4605,4 +4605,5 @@ export var unlockedList=
   findByName("Qhygone"),
   findByName("Bonja"),
   findByName("Pinkee"),
+  findByName("Trapclap"),
 ]

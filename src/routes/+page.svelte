@@ -5,7 +5,9 @@
 	import { projects } from '$lib/datatypes/ProjectInfo';
     import ProjectCard from '$lib/components/ProjectCard.svelte';
     import { routeList } from '$lib/datatypes/RouteCardData';
+	import { gameList } from '$lib/datatypes/SteamGameData';
     import RouteCard from '$lib/components/RouteCard.svelte';
+    import SteamGameCard from '$lib/components/SteamGameCard.svelte';
 </script>
 
 <svelte:head>
@@ -15,22 +17,33 @@
 
 <!-- svelte-ignore empty-block -->
 {#if true}
-	<div class="">
-		<section class="hero min-h-screen">
+	<div class="bg-gray-100">
+		<div class="hero pt-8">
 			<div class="hero-content text-center">
 				<div class="max-w-md">
 					<h1 class="text-5xl font-bold">Coming Soon</h1>
-					<p class="py-6">Stay tuned for the website, you can check out some other content in the tabs at the top of the screen</p>
-					<p class="py-6">Thanks, Justin</p>
-					<a href="/blanket"> Blanket Designer </a>
+					<p class="py-6">Stay tuned for the website, you can check out some projects I've worked on below</p>
+					<p class="py-6">Thanks, Justin</p>					
 				</div>
 			</div>  
-		</section>
+		</div>
+		<div class="text-4xl text-center font-semibold pb-4">
+			Games
+		</div>	
+		<div class="flex flex-col m-8 md:m-4 items-center">
+			{#each gameList as game,index}
+				<SteamGameCard steamGame={game} leftImage={index % 2 == 0}/>
+			{/each}
+		</div>		
+		<div class="text-4xl text-center font-semibold p-4 pt-8">
+			Miscellaneous Smaller Projects
+		</div>	
 		<div class="flex flex-wrap items-center justify-around gap-4 m-4">
 			{#each routeList as route}
 				<RouteCard routeCardData={route} />
 			{/each}
 		</div>
+		<a href="/blanket"> Blanket Designer </a>
 		<!--<section>
 			<h1 class="text-4xl pb-8 font-bold"> Projects </h1>
 			<div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">

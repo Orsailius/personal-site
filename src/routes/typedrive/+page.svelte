@@ -1,7 +1,6 @@
 <script lang="ts">
     import BasicStringComponent from "$lib/typedrive/BasicStringComponent.svelte";
     import UnknownComponent from "$lib/typedrive/UnknownComponent.svelte";
-    import { isString } from "markdown-it/lib/common/utils";
 
     interface Profile
     {
@@ -73,7 +72,7 @@
 
     function isGeneralType<T>(fieldType:T) : boolean
     {
-        if(isString(fieldType))
+        if(typeof(fieldType) == typeof(" "))
         {
             return true;
         }

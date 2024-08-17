@@ -6,20 +6,21 @@
 		<meta name="viewport" content="width=device-width" />
 		<meta property="og:image" content="/images/pkmn/BahamaBirthday.png" />
 		
-		<link href="./_app/immutable/assets/0.51c8cf13.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/0.526e4541.css" rel="stylesheet">
 		<link href="./_app/immutable/assets/Header.c2086c32.css" rel="stylesheet">
 		<link href="./_app/immutable/assets/7.73239062.css" rel="stylesheet">
 		<link href="./_app/immutable/assets/22.eaa38723.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.f0402a5c.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.28ef7f4c.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.072cd3b3.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.45e5b0a5.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.dcd2b8bd.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.a39bb243.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.b0d5924d.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.041b9b84.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.9512c531.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.b478cc27.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.a4192956.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/0.7e0139b1.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.e0de25fd.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/Header.svelte_svelte_type_style_lang.c605d69c.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/7.9c2b64e4.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/PokemonTypeSelector.989c3797.js"><title>Pokemon Bahama Birthday</title><!-- HEAD_svelte-1h5pz3t_START --><meta name="description" content="Birthday Game!"><!-- HEAD_svelte-1h5pz3t_END -->
+		<link rel="modulepreload" href="./_app/immutable/nodes/7.33ad2487.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/PokemonTypeSelector.0ec01d79.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CustomGylph.0ddc1c82.js"><title>Pokemon Bahama Birthday</title><!-- HEAD_svelte-1h5pz3t_START --><meta name="description" content="Birthday Game!"><!-- HEAD_svelte-1h5pz3t_END -->
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
@@ -30,12 +31,27 @@
 
 	<main class="relative bg-white">
 
-<div class="bg-base-100 bahama-background svelte-1iz4t2a"><div class="flex flex-col items-center pt-2"><img src="/images/pkmn/Pokemon.png">
+<div class="flex flex-col bg-base-100 bahama-background items-center justify-center svelte-1iz4t2a"><div class="flex flex-col items-center pt-2" style="max-width:800px;"><img src="/images/pkmn/Pokemon.png">
         <img src="/images/pkmn/BahamaBirthday.png">
         <img src="/images/pkmn/Background4.png"></div>  
-    <div class="flex flex-col items-center"><div class="text-yellow font-semibold mr-2 pr-2 ml-2 pl-2 pt-2 mt-2 text-center text-lg md:text-xl">Inspect each region below to see what pokemon you can catch there!
+    <div class="flex flex-wrap items-center justify-center gap-2 pb-2"><button class="btn btn-success">Team Builder
+        </button>
+        <button class="btn bg-blue-500 text-white hover:bg-blue-600">Region Map
+        </button>
+        <button class="btn bg-red-500 text-white hover:bg-red-600">Pokedex
+        </button>
+        <button class="btn btn-accent">Race Tracker
+        </button></div>
+    <div><div class="flex flex-col gap-3"><div class="outline outline-4 m-2 p-4 outline-gray-400 rounded-xl bg-gray-200"><div class="text-4xl font-semibold text-center pb-2">Team Builder
+        </div>
+        <div class="text-4xl font-semibold text-center pt-2"><button class="btn btn-success btn-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" class="bi" viewBox="0 0 16 16"><path d="M13 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2zM3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3z"></path><path d="M5.5 4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m8 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m-8 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m4-4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"></path></svg>
+                Randomize
+            </button></div>        
+        </div>    
+</div></div>        
+    <div class="flex flex-col items-center hidden"><div class="text-yellow font-semibold mr-2 pr-2 ml-2 pl-2 pt-2 mt-2 text-center text-lg md:text-xl">Inspect each region below to see what pokemon you can catch there!
         </div>     
-        <div class="relative p-1 m-1 md:p-8 md:m-8"><img src="/images/pkmn/WorldMap.png">
+        <div class="relative p-1 m-1 md:p-4 md:m-4"><img src="/images/pkmn/WorldMap.png">
             <div class="absolute bg-transparent" style="top:4.5%;left:41.75%;width:13.5%;height:16.6%"></div>
 
 <div class="absolute bg-transparent" style="top:21.1%;left:42%;width:13%;height:13%"></div>
@@ -87,7 +103,7 @@
 <div class="absolute bg-transparent" style="top:46%;left:73%;width:11%;height:10%"></div>
 
 </div></div>   
-    <div class="flex flex-col items-center justify-center"><img src="/images/pkmn/Pokedex.png">
+    <div class="flex flex-col items-center justify-center hidden"><img src="/images/pkmn/Pokedex.png">
         <div class="flex w-full flex-col items-center"><label class="form-control w-full max-w-md p-2"><div class="label"><span class="label-text">Search for type</span></div>
     <select class="select select-bordered pokemon-type-select bg-black"><option value="200" class="pokemon-type bg-black">Any
             </option><option value="0" class="pokemon-type pokemon-type-normal">Normal
@@ -668,6 +684,37 @@
         <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">72</div></div>
 </div>
             <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 382</div></div></div>           
+</div><div class="flex outline outline-2 outline-gray-600 p-2 m-2 rounded-xl gap-2"><div class="flex flex-col"><div class="text-2xl font-semibold text-center mb-2">Olbeeone #28</div>
+        <div class="rounded-xl outline outline-slate-200 card-image svelte-1hm7171" style="background-image:url(/images/pkmn/Unknown.jpg);"></div>
+        <div class="flex items-center justify-center m-2"><div class="pokemon-type pokemon-type-ghost svelte-1hm7171">Ghost</div>
+            <div class="pokemon-type pokemon-type-normal svelte-1hm7171">Normal</div></div></div>
+    <div class=""><div class="font-semibold text-xl text-gray-600 text-center mt-8 ml-16">Stats
+        </div>
+        <div class="grid grid-rows-7 gap-1"><div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">HP</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:29.411764705882355%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">75</div></div>
+</div>      
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Attack</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-green-500 svelte-ntginq" style="width:35.294117647058826%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">90</div></div>
+</div>
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Defence</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-green-500 svelte-ntginq" style="width:43.13725490196079%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">110</div></div>
+</div>
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Att</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-green-500 svelte-ntginq" style="width:39.21568627450981%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">100</div></div>
+</div>
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Def</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-orange-500 svelte-ntginq" style="width:21.568627450980394%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">55</div></div>
+</div>
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Speed</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-green-500 svelte-ntginq" style="width:39.21568627450981%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">100</div></div>
+</div>
+            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 530</div></div></div>           
 </div><div class="flex outline outline-2 outline-gray-600 p-2 m-2 rounded-xl gap-2"><div class="flex flex-col"><div class="text-2xl font-semibold text-center mb-2">Coffish #30</div>
         <div class="rounded-xl outline outline-slate-200 card-image svelte-1hm7171" style="background-image:url(/images/pkmn/Coffee2.jfif);"></div>
         <div class="flex items-center justify-center m-2"><div class="pokemon-type pokemon-type-water svelte-1hm7171">Water</div>
@@ -883,6 +930,37 @@
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Speed</span>
     <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
         <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
+</div>
+            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 530</div></div></div>           
+</div><div class="flex outline outline-2 outline-gray-600 p-2 m-2 rounded-xl gap-2"><div class="flex flex-col"><div class="text-2xl font-semibold text-center mb-2">Smogun #43</div>
+        <div class="rounded-xl outline outline-slate-200 card-image svelte-1hm7171" style="background-image:url(/images/pkmn/Unknown.jpg);"></div>
+        <div class="flex items-center justify-center m-2"><div class="pokemon-type pokemon-type-poison svelte-1hm7171">Poison</div>
+            <div class="pokemon-type pokemon-type-steel svelte-1hm7171">Steel</div></div></div>
+    <div class=""><div class="font-semibold text-xl text-gray-600 text-center mt-8 ml-16">Stats
+        </div>
+        <div class="grid grid-rows-7 gap-1"><div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">HP</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-green-500 svelte-ntginq" style="width:35.294117647058826%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">90</div></div>
+</div>      
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Attack</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-blue-500 svelte-ntginq" style="width:54.90196078431373%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">140</div></div>
+</div>
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Defence</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-green-500 svelte-ntginq" style="width:35.294117647058826%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">90</div></div>
+</div>
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Att</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:27.450980392156865%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">70</div></div>
+</div>
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Def</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:27.450980392156865%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">70</div></div>
+</div>
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Speed</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:27.450980392156865%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">70</div></div>
 </div>
             <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 530</div></div></div>           
 </div><div class="flex outline outline-2 outline-gray-600 p-2 m-2 rounded-xl gap-2"><div class="flex flex-col"><div class="text-2xl font-semibold text-center mb-2">Miths #44</div>
@@ -1326,30 +1404,30 @@
     <div class=""><div class="font-semibold text-xl text-gray-600 text-center mt-8 ml-16">Stats
         </div>
         <div class="grid grid-rows-7 gap-1"><div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">HP</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-orange-500 svelte-ntginq" style="width:23.52941176470588%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">60</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:27.450980392156865%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">70</div></div>
 </div>      
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Attack</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.882352941176475%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">66</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:29.80392156862745%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">76</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Defence</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.882352941176475%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">66</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:29.80392156862745%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">76</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Att</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-orange-500 svelte-ntginq" style="width:23.52941176470588%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">60</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:27.450980392156865%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">70</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Def</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-orange-500 svelte-ntginq" style="width:23.52941176470588%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">60</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:27.450980392156865%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">70</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Speed</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-orange-500 svelte-ntginq" style="width:23.52941176470588%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">60</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:27.450980392156865%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">70</div></div>
 </div>
-            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 372</div></div></div>           
+            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 432</div></div></div>           
 </div><div class="flex outline outline-2 outline-gray-600 p-2 m-2 rounded-xl gap-2"><div class="flex flex-col"><div class="text-2xl font-semibold text-center mb-2">Mini Alex #61</div>
         <div class="rounded-xl outline outline-slate-200 card-image svelte-1hm7171" style="background-image:url(/images/pkmn/Minialex3.jfif);"></div>
         <div class="flex items-center justify-center m-2"><div class="pokemon-type pokemon-type-normal svelte-1hm7171">Normal</div>
@@ -1357,30 +1435,30 @@
     <div class=""><div class="font-semibold text-xl text-gray-600 text-center mt-8 ml-16">Stats
         </div>
         <div class="grid grid-rows-7 gap-1"><div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">HP</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-orange-500 svelte-ntginq" style="width:23.52941176470588%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">60</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:27.450980392156865%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">70</div></div>
 </div>      
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Attack</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.882352941176475%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">66</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:29.80392156862745%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">76</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Defence</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-orange-500 svelte-ntginq" style="width:23.52941176470588%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">60</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:27.450980392156865%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">70</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Att</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-orange-500 svelte-ntginq" style="width:24.705882352941178%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">63</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:28.627450980392155%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">73</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Def</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-orange-500 svelte-ntginq" style="width:23.52941176470588%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">60</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:27.450980392156865%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">70</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Speed</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-orange-500 svelte-ntginq" style="width:24.705882352941178%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">63</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:28.627450980392155%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">73</div></div>
 </div>
-            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 372</div></div></div>           
+            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 432</div></div></div>           
 </div><div class="flex outline outline-2 outline-gray-600 p-2 m-2 rounded-xl gap-2"><div class="flex flex-col"><div class="text-2xl font-semibold text-center mb-2">Tot Henry #62</div>
         <div class="rounded-xl outline outline-slate-200 card-image svelte-1hm7171" style="background-image:url(/images/pkmn/Unknown.jpg);"></div>
         <div class="flex items-center justify-center m-2"><div class="pokemon-type pokemon-type-normal svelte-1hm7171">Normal</div>
@@ -1411,7 +1489,7 @@
     <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-orange-500 svelte-ntginq" style="width:23.52941176470588%"></div>
         <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">60</div></div>
 </div>
-            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 372</div></div></div>           
+            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 432</div></div></div>           
 </div><div class="flex outline outline-2 outline-gray-600 p-2 m-2 rounded-xl gap-2"><div class="flex flex-col"><div class="text-2xl font-semibold text-center mb-2">Wee Huy #63</div>
         <div class="rounded-xl outline outline-slate-200 card-image svelte-1hm7171" style="background-image:url(/images/pkmn/WeeHuy3.jfif);"></div>
         <div class="flex items-center justify-center m-2"><div class="pokemon-type pokemon-type-normal svelte-1hm7171">Normal</div>
@@ -1442,7 +1520,7 @@
     <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.882352941176475%"></div>
         <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">66</div></div>
 </div>
-            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 372</div></div></div>           
+            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 432</div></div></div>           
 </div><div class="flex outline outline-2 outline-gray-600 p-2 m-2 rounded-xl gap-2"><div class="flex flex-col"><div class="text-2xl font-semibold text-center mb-2">Juvi Justin #64</div>
         <div class="rounded-xl outline outline-slate-200 card-image svelte-1hm7171" style="background-image:url(/images/pkmn/JuviJustin2.jfif);"></div>
         <div class="flex items-center justify-center m-2"><div class="pokemon-type pokemon-type-normal svelte-1hm7171">Normal</div>
@@ -1450,30 +1528,30 @@
     <div class=""><div class="font-semibold text-xl text-gray-600 text-center mt-8 ml-16">Stats
         </div>
         <div class="grid grid-rows-7 gap-1"><div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">HP</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-orange-500 svelte-ntginq" style="width:24.705882352941178%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">63</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:28.627450980392155%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">73</div></div>
 </div>      
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Attack</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-orange-500 svelte-ntginq" style="width:23.52941176470588%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">60</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:27.450980392156865%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">70</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Defence</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-orange-500 svelte-ntginq" style="width:23.52941176470588%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">60</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:27.450980392156865%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">70</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Att</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.882352941176475%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">66</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:29.80392156862745%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">76</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Def</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-orange-500 svelte-ntginq" style="width:23.52941176470588%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">60</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:27.450980392156865%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">70</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Speed</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-orange-500 svelte-ntginq" style="width:24.705882352941178%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">63</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:28.627450980392155%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">73</div></div>
 </div>
-            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 372</div></div></div>           
+            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 432</div></div></div>           
 </div><div class="flex outline outline-2 outline-gray-600 p-2 m-2 rounded-xl gap-2"><div class="flex flex-col"><div class="text-2xl font-semibold text-center mb-2">Kenbug #65</div>
         <div class="rounded-xl outline outline-slate-200 card-image svelte-1hm7171" style="background-image:url(/images/pkmn/Kenbee1.jfif);"></div>
         <div class="flex items-center justify-center m-2"><div class="pokemon-type pokemon-type-bug svelte-1hm7171">Bug</div>
@@ -1481,30 +1559,30 @@
     <div class=""><div class="font-semibold text-xl text-gray-600 text-center mt-8 ml-16">Stats
         </div>
         <div class="grid grid-rows-7 gap-1"><div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">HP</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>      
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Attack</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:28.235294117647058%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">72</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:34.11764705882353%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">87</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Defence</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:28.235294117647058%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">72</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:34.11764705882353%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">87</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Att</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Def</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Speed</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>
-            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 404</div></div></div>           
+            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 494</div></div></div>           
 </div><div class="flex outline outline-2 outline-gray-600 p-2 m-2 rounded-xl gap-2"><div class="flex flex-col"><div class="text-2xl font-semibold text-center mb-2">Kenock #66</div>
         <div class="rounded-xl outline outline-slate-200 card-image svelte-1hm7171" style="background-image:url(/images/pkmn/Kenock3.jfif);"></div>
         <div class="flex items-center justify-center m-2"><div class="pokemon-type pokemon-type-rock svelte-1hm7171">Rock</div>
@@ -1512,30 +1590,30 @@
     <div class=""><div class="font-semibold text-xl text-gray-600 text-center mt-8 ml-16">Stats
         </div>
         <div class="grid grid-rows-7 gap-1"><div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">HP</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>      
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Attack</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:28.235294117647058%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">72</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:34.11764705882353%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">87</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Defence</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:28.235294117647058%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">72</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:34.11764705882353%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">87</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Att</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Def</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Speed</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>
-            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 404</div></div></div>           
+            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 494</div></div></div>           
 </div><div class="flex outline outline-2 outline-gray-600 p-2 m-2 rounded-xl gap-2"><div class="flex flex-col"><div class="text-2xl font-semibold text-center mb-2">Kenclaw #67</div>
         <div class="rounded-xl outline outline-slate-200 card-image svelte-1hm7171" style="background-image:url(/images/pkmn/Kenclaw3.jfif);"></div>
         <div class="flex items-center justify-center m-2"><div class="pokemon-type pokemon-type-dragon svelte-1hm7171">Dragon</div>
@@ -1543,30 +1621,30 @@
     <div class=""><div class="font-semibold text-xl text-gray-600 text-center mt-8 ml-16">Stats
         </div>
         <div class="grid grid-rows-7 gap-1"><div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">HP</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>      
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Attack</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:28.235294117647058%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">72</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:34.11764705882353%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">87</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Defence</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:28.235294117647058%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">72</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:34.11764705882353%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">87</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Att</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Def</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Speed</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>
-            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 404</div></div></div>           
+            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 494</div></div></div>           
 </div><div class="flex outline outline-2 outline-gray-600 p-2 m-2 rounded-xl gap-2"><div class="flex flex-col"><div class="text-2xl font-semibold text-center mb-2">Kenbreak #68</div>
         <div class="rounded-xl outline outline-slate-200 card-image svelte-1hm7171" style="background-image:url(/images/pkmn/Kenbreak1.jfif);"></div>
         <div class="flex items-center justify-center m-2"><div class="pokemon-type pokemon-type-rock svelte-1hm7171">Rock</div>
@@ -1667,30 +1745,30 @@
     <div class=""><div class="font-semibold text-xl text-gray-600 text-center mt-8 ml-16">Stats
         </div>
         <div class="grid grid-rows-7 gap-1"><div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">HP</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>      
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Attack</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:28.235294117647058%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">72</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:34.11764705882353%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">87</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Defence</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Att</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:26.666666666666668%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">68</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:32.549019607843135%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">83</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Def</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Speed</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:26.666666666666668%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">68</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:32.549019607843135%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">83</div></div>
 </div>
-            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 403</div></div></div>           
+            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 494</div></div></div>           
 </div><div class="flex outline outline-2 outline-gray-600 p-2 m-2 rounded-xl gap-2"><div class="flex flex-col"><div class="text-2xl font-semibold text-center mb-2">Aerialex #72</div>
         <div class="rounded-xl outline outline-slate-200 card-image svelte-1hm7171" style="background-image:url(/images/pkmn/Aerialex1.jfif);"></div>
         <div class="flex items-center justify-center m-2"><div class="pokemon-type pokemon-type-flying svelte-1hm7171">Flying</div>
@@ -1698,30 +1776,30 @@
     <div class=""><div class="font-semibold text-xl text-gray-600 text-center mt-8 ml-16">Stats
         </div>
         <div class="grid grid-rows-7 gap-1"><div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">HP</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>      
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Attack</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:28.235294117647058%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">72</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:34.11764705882353%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">87</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Defence</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Att</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:26.666666666666668%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">68</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:32.549019607843135%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">83</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Def</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Speed</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:26.666666666666668%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">68</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:32.549019607843135%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">83</div></div>
 </div>
-            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 403</div></div></div>           
+            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 494</div></div></div>           
 </div><div class="flex outline outline-2 outline-gray-600 p-2 m-2 rounded-xl gap-2"><div class="flex flex-col"><div class="text-2xl font-semibold text-center mb-2">Metalex #73</div>
         <div class="rounded-xl outline outline-slate-200 card-image svelte-1hm7171" style="background-image:url(/images/pkmn/Metalex1.jfif);"></div>
         <div class="flex items-center justify-center m-2"><div class="pokemon-type pokemon-type-steel svelte-1hm7171">Steel</div>
@@ -1729,30 +1807,30 @@
     <div class=""><div class="font-semibold text-xl text-gray-600 text-center mt-8 ml-16">Stats
         </div>
         <div class="grid grid-rows-7 gap-1"><div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">HP</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>      
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Attack</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:28.235294117647058%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">72</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:34.11764705882353%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">87</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Defence</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Att</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:26.666666666666668%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">68</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:32.549019607843135%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">83</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Def</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Speed</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:26.666666666666668%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">68</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:32.549019607843135%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">83</div></div>
 </div>
-            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 403</div></div></div>           
+            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 494</div></div></div>           
 </div><div class="flex outline outline-2 outline-gray-600 p-2 m-2 rounded-xl gap-2"><div class="flex flex-col"><div class="text-2xl font-semibold text-center mb-2">Yogalex #74</div>
         <div class="rounded-xl outline outline-slate-200 card-image svelte-1hm7171" style="background-image:url(/images/pkmn/Yogalex1.jfif);"></div>
         <div class="flex items-center justify-center m-2"><div class="pokemon-type pokemon-type-grass svelte-1hm7171">Grass</div>
@@ -1846,6 +1924,192 @@
         <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">90</div></div>
 </div>
             <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 530</div></div></div>           
+</div><div class="flex outline outline-2 outline-gray-600 p-2 m-2 rounded-xl gap-2"><div class="flex flex-col"><div class="text-2xl font-semibold text-center mb-2">Washxu #77</div>
+        <div class="rounded-xl outline outline-slate-200 card-image svelte-1hm7171" style="background-image:url(/images/pkmn/Unknown.jpg);"></div>
+        <div class="flex items-center justify-center m-2"><div class="pokemon-type pokemon-type-water svelte-1hm7171">Water</div>
+            <div class="pokemon-type pokemon-type- svelte-1hm7171"></div></div></div>
+    <div class=""><div class="font-semibold text-xl text-gray-600 text-center mt-8 ml-16">Stats
+        </div>
+        <div class="grid grid-rows-7 gap-1"><div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">HP</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
+</div>      
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Attack</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
+</div>
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Defence</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
+</div>
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Att</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:34.11764705882353%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">87</div></div>
+</div>
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Def</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:34.11764705882353%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">87</div></div>
+</div>
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Speed</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
+</div>
+            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 494</div></div></div>           
+</div><div class="flex outline outline-2 outline-gray-600 p-2 m-2 rounded-xl gap-2"><div class="flex flex-col"><div class="text-2xl font-semibold text-center mb-2">Musicry #78</div>
+        <div class="rounded-xl outline outline-slate-200 card-image svelte-1hm7171" style="background-image:url(/images/pkmn/Unknown.jpg);"></div>
+        <div class="flex items-center justify-center m-2"><div class="pokemon-type pokemon-type-psychic svelte-1hm7171">Psychic</div>
+            <div class="pokemon-type pokemon-type- svelte-1hm7171"></div></div></div>
+    <div class=""><div class="font-semibold text-xl text-gray-600 text-center mt-8 ml-16">Stats
+        </div>
+        <div class="grid grid-rows-7 gap-1"><div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">HP</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
+</div>      
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Attack</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
+</div>
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Defence</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
+</div>
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Att</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:34.11764705882353%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">87</div></div>
+</div>
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Def</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:34.11764705882353%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">87</div></div>
+</div>
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Speed</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
+</div>
+            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 494</div></div></div>           
+</div><div class="flex outline outline-2 outline-gray-600 p-2 m-2 rounded-xl gap-2"><div class="flex flex-col"><div class="text-2xl font-semibold text-center mb-2">Henrest #79</div>
+        <div class="rounded-xl outline outline-slate-200 card-image svelte-1hm7171" style="background-image:url(/images/pkmn/Unknown.jpg);"></div>
+        <div class="flex items-center justify-center m-2"><div class="pokemon-type pokemon-type-fairy svelte-1hm7171">Fairy</div>
+            <div class="pokemon-type pokemon-type- svelte-1hm7171"></div></div></div>
+    <div class=""><div class="font-semibold text-xl text-gray-600 text-center mt-8 ml-16">Stats
+        </div>
+        <div class="grid grid-rows-7 gap-1"><div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">HP</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
+</div>      
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Attack</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
+</div>
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Defence</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
+</div>
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Att</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:34.11764705882353%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">87</div></div>
+</div>
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Def</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:34.11764705882353%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">87</div></div>
+</div>
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Speed</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
+</div>
+            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 494</div></div></div>           
+</div><div class="flex outline outline-2 outline-gray-600 p-2 m-2 rounded-xl gap-2"><div class="flex flex-col"><div class="text-2xl font-semibold text-center mb-2">Neatune #80</div>
+        <div class="rounded-xl outline outline-slate-200 card-image svelte-1hm7171" style="background-image:url(/images/pkmn/Unknown.jpg);"></div>
+        <div class="flex items-center justify-center m-2"><div class="pokemon-type pokemon-type-water svelte-1hm7171">Water</div>
+            <div class="pokemon-type pokemon-type-psychic svelte-1hm7171">Psychic</div></div></div>
+    <div class=""><div class="font-semibold text-xl text-gray-600 text-center mt-8 ml-16">Stats
+        </div>
+        <div class="grid grid-rows-7 gap-1"><div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">HP</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:33.33333333333333%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">85</div></div>
+</div>      
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Attack</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:33.33333333333333%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">85</div></div>
+</div>
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Defence</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:33.33333333333333%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">85</div></div>
+</div>
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Att</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-green-500 svelte-ntginq" style="width:37.254901960784316%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">95</div></div>
+</div>
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Def</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-green-500 svelte-ntginq" style="width:37.254901960784316%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">95</div></div>
+</div>
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Speed</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:33.33333333333333%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">85</div></div>
+</div>
+            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 530</div></div></div>           
+</div><div class="flex outline outline-2 outline-gray-600 p-2 m-2 rounded-xl gap-2"><div class="flex flex-col"><div class="text-2xl font-semibold text-center mb-2">Henrem #81</div>
+        <div class="rounded-xl outline outline-slate-200 card-image svelte-1hm7171" style="background-image:url(/images/pkmn/Unknown.jpg);"></div>
+        <div class="flex items-center justify-center m-2"><div class="pokemon-type pokemon-type-psychic svelte-1hm7171">Psychic</div>
+            <div class="pokemon-type pokemon-type-fairy svelte-1hm7171">Fairy</div></div></div>
+    <div class=""><div class="font-semibold text-xl text-gray-600 text-center mt-8 ml-16">Stats
+        </div>
+        <div class="grid grid-rows-7 gap-1"><div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">HP</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:33.33333333333333%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">85</div></div>
+</div>      
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Attack</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:33.33333333333333%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">85</div></div>
+</div>
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Defence</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:33.33333333333333%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">85</div></div>
+</div>
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Att</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-green-500 svelte-ntginq" style="width:37.254901960784316%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">95</div></div>
+</div>
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Def</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-green-500 svelte-ntginq" style="width:37.254901960784316%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">95</div></div>
+</div>
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Speed</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:33.33333333333333%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">85</div></div>
+</div>
+            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 530</div></div></div>           
+</div><div class="flex outline outline-2 outline-gray-600 p-2 m-2 rounded-xl gap-2"><div class="flex flex-col"><div class="text-2xl font-semibold text-center mb-2">Cleanery #82</div>
+        <div class="rounded-xl outline outline-slate-200 card-image svelte-1hm7171" style="background-image:url(/images/pkmn/Unknown.jpg);"></div>
+        <div class="flex items-center justify-center m-2"><div class="pokemon-type pokemon-type-water svelte-1hm7171">Water</div>
+            <div class="pokemon-type pokemon-type-fairy svelte-1hm7171">Fairy</div></div></div>
+    <div class=""><div class="font-semibold text-xl text-gray-600 text-center mt-8 ml-16">Stats
+        </div>
+        <div class="grid grid-rows-7 gap-1"><div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">HP</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:33.33333333333333%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">85</div></div>
+</div>      
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Attack</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:33.33333333333333%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">85</div></div>
+</div>
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Defence</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:33.33333333333333%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">85</div></div>
+</div>
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Att</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-green-500 svelte-ntginq" style="width:37.254901960784316%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">95</div></div>
+</div>
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Def</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-green-500 svelte-ntginq" style="width:37.254901960784316%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">95</div></div>
+</div>
+            <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Speed</span>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:33.33333333333333%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">85</div></div>
+</div>
+            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 530</div></div></div>           
 </div><div class="flex outline outline-2 outline-gray-600 p-2 m-2 rounded-xl gap-2"><div class="flex flex-col"><div class="text-2xl font-semibold text-center mb-2">Photour #83</div>
         <div class="rounded-xl outline outline-slate-200 card-image svelte-1hm7171" style="background-image:url(/images/pkmn/Photour2.jfif);"></div>
         <div class="flex items-center justify-center m-2"><div class="pokemon-type pokemon-type-fire svelte-1hm7171">Fire</div>
@@ -1853,30 +2117,30 @@
     <div class=""><div class="font-semibold text-xl text-gray-600 text-center mt-8 ml-16">Stats
         </div>
         <div class="grid grid-rows-7 gap-1"><div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">HP</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>      
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Attack</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Defence</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Att</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:28.235294117647058%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">72</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:34.11764705882353%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">87</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Def</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Speed</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:28.235294117647058%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">72</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:34.11764705882353%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">87</div></div>
 </div>
-            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 404</div></div></div>           
+            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 494</div></div></div>           
 </div><div class="flex outline outline-2 outline-gray-600 p-2 m-2 rounded-xl gap-2"><div class="flex flex-col"><div class="text-2xl font-semibold text-center mb-2">Huay Thai #84</div>
         <div class="rounded-xl outline outline-slate-200 card-image svelte-1hm7171" style="background-image:url(/images/pkmn/HuyThai1.jfif);"></div>
         <div class="flex items-center justify-center m-2"><div class="pokemon-type pokemon-type-fighting svelte-1hm7171">Fighting</div>
@@ -1884,30 +2148,30 @@
     <div class=""><div class="font-semibold text-xl text-gray-600 text-center mt-8 ml-16">Stats
         </div>
         <div class="grid grid-rows-7 gap-1"><div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">HP</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>      
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Attack</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Defence</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Att</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:28.235294117647058%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">72</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:34.11764705882353%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">87</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Def</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Speed</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:28.235294117647058%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">72</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:34.11764705882353%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">87</div></div>
 </div>
-            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 404</div></div></div>           
+            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 494</div></div></div>           
 </div><div class="flex outline outline-2 outline-gray-600 p-2 m-2 rounded-xl gap-2"><div class="flex flex-col"><div class="text-2xl font-semibold text-center mb-2">Wiispy #85</div>
         <div class="rounded-xl outline outline-slate-200 card-image svelte-1hm7171" style="background-image:url(/images/pkmn/Wiispy1.jfif);"></div>
         <div class="flex items-center justify-center m-2"><div class="pokemon-type pokemon-type-dark svelte-1hm7171">Dark</div>
@@ -1915,30 +2179,30 @@
     <div class=""><div class="font-semibold text-xl text-gray-600 text-center mt-8 ml-16">Stats
         </div>
         <div class="grid grid-rows-7 gap-1"><div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">HP</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>      
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Attack</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Defence</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Att</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:28.235294117647058%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">72</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:34.11764705882353%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">87</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Def</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Speed</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:28.235294117647058%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">72</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:34.11764705882353%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">87</div></div>
 </div>
-            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 404</div></div></div>           
+            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 494</div></div></div>           
 </div><div class="flex outline outline-2 outline-gray-600 p-2 m-2 rounded-xl gap-2"><div class="flex flex-col"><div class="text-2xl font-semibold text-center mb-2">Huyu #86</div>
         <div class="rounded-xl outline outline-slate-200 card-image svelte-1hm7171" style="background-image:url(/images/pkmn/Huyu1.jfif);"></div>
         <div class="flex items-center justify-center m-2"><div class="pokemon-type pokemon-type-fire svelte-1hm7171">Fire</div>
@@ -2039,30 +2303,30 @@
     <div class=""><div class="font-semibold text-xl text-gray-600 text-center mt-8 ml-16">Stats
         </div>
         <div class="grid grid-rows-7 gap-1"><div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">HP</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:26.666666666666668%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">68</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:32.549019607843135%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">83</div></div>
 </div>      
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Attack</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Defence</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Att</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:28.235294117647058%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">72</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:34.11764705882353%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">87</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Def</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Speed</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:26.666666666666668%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">68</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:32.549019607843135%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">83</div></div>
 </div>
-            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 403</div></div></div>           
+            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 494</div></div></div>           
 </div><div class="flex outline outline-2 outline-gray-600 p-2 m-2 rounded-xl gap-2"><div class="flex flex-col"><div class="text-2xl font-semibold text-center mb-2">Justice #90</div>
         <div class="rounded-xl outline outline-slate-200 card-image svelte-1hm7171" style="background-image:url(/images/pkmn/Justice2.jfif);"></div>
         <div class="flex items-center justify-center m-2"><div class="pokemon-type pokemon-type-ice svelte-1hm7171">Ice</div>
@@ -2070,30 +2334,30 @@
     <div class=""><div class="font-semibold text-xl text-gray-600 text-center mt-8 ml-16">Stats
         </div>
         <div class="grid grid-rows-7 gap-1"><div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">HP</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:26.666666666666668%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">68</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:32.549019607843135%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">83</div></div>
 </div>      
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Attack</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Defence</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Att</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:28.235294117647058%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">72</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:34.11764705882353%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">87</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Def</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Speed</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:26.666666666666668%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">68</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:32.549019607843135%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">83</div></div>
 </div>
-            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 403</div></div></div>           
+            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 494</div></div></div>           
 </div><div class="flex outline outline-2 outline-gray-600 p-2 m-2 rounded-xl gap-2"><div class="flex flex-col"><div class="text-2xl font-semibold text-center mb-2">Lurkmoore #91</div>
         <div class="rounded-xl outline outline-slate-200 card-image svelte-1hm7171" style="background-image:url(/images/pkmn/Lurkmoore2.jfif);"></div>
         <div class="flex items-center justify-center m-2"><div class="pokemon-type pokemon-type-ghost svelte-1hm7171">Ghost</div>
@@ -2101,30 +2365,30 @@
     <div class=""><div class="font-semibold text-xl text-gray-600 text-center mt-8 ml-16">Stats
         </div>
         <div class="grid grid-rows-7 gap-1"><div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">HP</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:26.666666666666668%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">68</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:32.549019607843135%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">83</div></div>
 </div>      
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Attack</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Defence</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Att</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:28.235294117647058%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">72</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:34.11764705882353%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">87</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Sp.Def</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:25.49019607843137%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">65</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:31.372549019607842%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">80</div></div>
 </div>
             <div class="grid grid-cols-3 items-center"><span class="mr-2 md:mr-3 text-right text-gray-600 font-semibold">Speed</span>
-    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:26.666666666666668%"></div>
-        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">68</div></div>
+    <div class="w-full h-full bar bg-white outline outline-1 outline-gray-600 col-span-2 flex relative justify-items-center items-center place-items-center rounded-md svelte-ntginq"><div class="absolute w-full h-full rounded-md bg-yellow-500 svelte-ntginq" style="width:32.549019607843135%"></div>
+        <div class="text-gray-600 w-full text-center align-middle z-10 font-semibold">83</div></div>
 </div>
-            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 403</div></div></div>           
+            <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 494</div></div></div>           
 </div><div class="flex outline outline-2 outline-gray-600 p-2 m-2 rounded-xl gap-2"><div class="flex flex-col"><div class="text-2xl font-semibold text-center mb-2">Conditin #92</div>
         <div class="rounded-xl outline outline-slate-200 card-image svelte-1hm7171" style="background-image:url(/images/pkmn/Conditin4.jfif);"></div>
         <div class="flex items-center justify-center m-2"><div class="pokemon-type pokemon-type-electric svelte-1hm7171">Electric</div>
@@ -2219,7 +2483,7 @@
 </div>
             <div class="text-gray-600 font-semibold text-right pr-4">Base Stat Total: 530</div></div></div>           
 </div></div></div>   
-    <div class="m-2"><div class="collapse collapse-arrow outline outline-2"><input type="checkbox">
+    <div class="m-2 hidden"><div class="collapse collapse-open collapse-arrow outline outline-2"><input type="checkbox">
             <div class="collapse-title text-3xl text-center font-semibold">Race Tracker</div>
             <div class="collapse-content"><div class="flex flex-col gap-3"><div class="outline outline-4 m-2 p-4 outline-orange-400 rounded-xl bg-orange-100"><div class="text-4xl font-semibold text-center">Score
         </div>
@@ -2412,8 +2676,7 @@
                     </div></div>
     </div>   
 </div></div></div></div>  
-    
-    <div class="outline outline-1 m-2 mt-4 rounded-xl text-center p-4">Pokemon Bahama Birthday
+    <div class="outline outline-1 m-4 mt-4 rounded-xl text-center p-4 " style="width:95%">Pokemon Bahama Birthday
         
         </div>
 </div></main>
@@ -2425,7 +2688,7 @@
 			
 			<script>
 				{
-					__sveltekit_1ehc64 = {
+					__sveltekit_1sn02ew = {
 						base: new URL(".", location).pathname.slice(0, -1),
 						env: {}
 					};
@@ -2435,8 +2698,8 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.f0402a5c.js"),
-						import("./_app/immutable/entry/app.dcd2b8bd.js")
+						import("./_app/immutable/entry/start.a39bb243.js"),
+						import("./_app/immutable/entry/app.b478cc27.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 7],

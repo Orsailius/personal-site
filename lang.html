@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="coolLight">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta property="og:image" content="/images/pkmn/BahamaBirthday.png" />
+		
+		<link href="./_app/immutable/assets/0.06f95feb.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/Header.c2086c32.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.5fc02d68.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.5aae5d24.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.d7c2a022.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.fcde3aef.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.0769b806.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.a4192956.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.eac31fc5.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Header.svelte_svelte_type_style_lang.c605d69c.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/28.02189627.js"><title>Lang</title><!-- HEAD_svelte-1tqohbw_START --><meta name="description" content="New Programming Language"><!-- HEAD_svelte-1tqohbw_END -->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+
+
+
+<div class="app svelte-15wssfg">
+
+	<main class="relative bg-white">
+
+<div class="flex bg-base-100 items-center justify-center"><div class="flex flex-col sm:w-7/8 md:w-3/4 items-center justify-center gap-16" style="max-width:1024px;"><div class="text-4xl font-semibold text-center pt-8 w-full">Lang V0.1</div>
+		<div class="w-full grid grid-cols-2 gap-4" style="white-space: pre-wrap;"><div class="pt-4 pb-2"><div></div></div>	
+	<div class="flex flex-col gap-2"><div class="text-3xl">Match</div>
+		<div class="m-2">Check if an expression is equal to multiple values without  repeating yourself.  You can also specify an expression to evaluate to check if its true.  Use the 'it' variable to refer to the result of the expression. </div></div></div><div class="w-full grid grid-cols-2 gap-4" style="white-space: pre-wrap;"><div class="flex flex-col gap-2"><div class="text-3xl">Swizzles</div>
+		<div class="m-2">Swizzles let you easily manipulate properties in different ways.  You can get and set any combination of variables in single statements by combining their names.  Variable names in a swizzle must be 1 character long. Swizzle getters return a tuple, and setters expect one.</div></div>
+	<div class="pt-4 pb-2"><div></div></div></div><div class="w-full grid grid-cols-2 gap-4" style="white-space: pre-wrap;"><div class="pt-4 pb-2"><div></div></div>	
+	<div class="flex flex-col gap-2"><div class="text-3xl">Conditionals</div>
+		<div class="m-2">We support normal c-style if/else if/else statements as well as the ternary operator.  In addition we support the binary if operator (omit the : to not have an else statement)</div></div></div><div class="w-full grid grid-cols-2 gap-4" style="white-space: pre-wrap;"><div class="flex flex-col gap-2"><div class="text-3xl">Data Types</div>
+		<div class="m-2">Ints, strings, doubles, etc.  More notable are the literals for arrays, maps and ranges</div></div>
+	<div class="pt-4 pb-2"><div></div></div></div><div class="w-full grid grid-cols-2 gap-4" style="white-space: pre-wrap;"><div class="pt-4 pb-2"><div></div></div>	
+	<div class="flex flex-col gap-2"><div class="text-3xl">Coroutines</div>
+		<div class="m-2">Adding a $ at the end of a method name signifies it is a coroutine. This transforms  return statements into yield statements that can be continued upon</div></div></div><div class="w-full grid grid-cols-2 gap-4" style="white-space: pre-wrap;"><div class="flex flex-col gap-2"><div class="text-3xl">Catalogs</div>
+		<div class="m-2">Catalogs are enhanced enums that have the properties of normal classes. Catalogs can also be iterated over, contain their name and id, and can be randomly selected.</div></div>
+	<div class="pt-4 pb-2"><div></div></div></div><div class="w-full grid grid-cols-2 gap-4" style="white-space: pre-wrap;"><div class="pt-4 pb-2"><div></div></div>	
+	<div class="flex flex-col gap-2"><div class="text-3xl">Extensions</div>
+		<div class="m-2">Extensions allow you to add methods to class in a different location</div></div></div><div class="w-full grid grid-cols-2 gap-4" style="white-space: pre-wrap;"><div class="flex flex-col gap-2"><div class="text-3xl">Errors</div>
+		<div class="m-2">Errors have first order support and you can declare them by mention. The code '@:MyError create or references a specific error symbol you can use. No more returning null or -1 or other weird constants on failure. Errors are also optional; you don't have to write obnoxious try catch statements around other code you maybe didn't even write that breaks your codes flow. Use @ in front of a variable to refer to errors it may have, @myVar is true if there was an error,  and false otherwise. You can test equality against @myVar with an error symbol to see if it is a specific error.</div></div>
+	<div class="pt-4 pb-2"><div></div></div></div><div class="w-full grid grid-cols-2 gap-4" style="white-space: pre-wrap;"><div class="pt-4 pb-2"><div></div></div>	
+	<div class="flex flex-col gap-2"><div class="text-3xl">Methods</div>
+		<div class="m-2">Normal methods, arrow methods and lambdas</div></div></div><div class="w-full grid grid-cols-2 gap-4" style="white-space: pre-wrap;"><div class="flex flex-col gap-2"><div class="text-3xl">Anonymous Objects</div>
+		<div class="m-2">You can create anonymous objects using ${} syntax. Errors can be given Anonymous objects by using : between the error and the object</div></div>
+	<div class="pt-4 pb-2"><div></div></div></div>
+		<div class="h-24 w-full"></div></div></div></main>
+
+	
+</div>
+
+
+			
+			<script>
+				{
+					__sveltekit_6kx9mg = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.5fc02d68.js"),
+						import("./_app/immutable/entry/app.0769b806.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 28],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
